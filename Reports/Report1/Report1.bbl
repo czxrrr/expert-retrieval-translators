@@ -1,0 +1,24 @@
+\begin{thebibliography}{1}
+
+\bibitem{GeorgetownUniversity}
+Hui Yang Nazli Goharian Steve Kunath Ophir~Frieder Andrew~Yates, Dave~DeBoer.
+\newblock (not too) personalized learning to rank for contextual suggestion.
+\newblock {\em TREC Conference}, 2012.
+
+\bibitem{ICTNET}
+Tong~Wu Bingyang~Liu.
+\newblock Ictnet at context suggestion track trec 2012.
+\newblock {\em TREC Conference}, 2012.
+
+\bibitem{CSIRO}
+Cecile~Paris David~Milne, Paul~Thomas.
+\newblock Finding, weighting and describing venues: Csiro at the 2012 trec
+  contextual suggestion track.
+\newblock {\em TREC Conference}, 2012.
+
+\bibitem{IRIT}
+Guillaume~Cabanac Gilles~Hubert.
+\newblock Irit at trec 2012 contextual suggestion track.
+\newblock {\em TREC Conference}, 2012.
+
+\end{thebibliography}
