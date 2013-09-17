@@ -5,5 +5,6 @@
 \contentsline {subsection}{\numberline {2.2}Georgetown University \cite {GeorgetownUniversity}}{3}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}ICTNET \cite {ICTNET}}{3}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}IRIT \cite {IRIT}}{3}{subsection.2.4}
-\contentsline {section}{\numberline {3}Ideas and Brainstorming}{4}{section.3}
-\contentsline {section}{\numberline {4}Next Step}{5}{section.4}
+\contentsline {subsection}{\numberline {2.5}University of Delaware \cite {Delaware}}{4}{subsection.2.5}
+\contentsline {section}{\numberline {3}Ideas and Brainstorming}{5}{section.3}
+\contentsline {section}{\numberline {4}Next Step}{6}{section.4}

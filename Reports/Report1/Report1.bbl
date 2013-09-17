@@ -21,4 +21,9 @@ Guillaume~Cabanac Gilles~Hubert.
 \newblock Irit at trec 2012 contextual suggestion track.
 \newblock {\em TREC Conference}, 2012.
 
+\bibitem{Delaware}
+Peilin Yang and Hui Fang.
+\newblock An exploration of ranking-based strategy for contextual suggestion.
+\newblock {\em TREC Conference}, 2012.
+
 \end{thebibliography}
