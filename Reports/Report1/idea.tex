@@ -1,27 +1,27 @@
 \section{Ideas and Brainstorming}
-Using data represented in Appendix A for every translation, a vector can be created that shows the relation between four criteria (time, price, text matching and cooperation) and final feedback. My idea for translators ranking consisted of two elements which both are based on the defined vector. It is formulated as follows where $R_T$ ,$H_T$ and $P_T$ denote ranking value of translator, first element (Harmonic) and second element (Privilege). $\alpha$ is the tuning factor and can be between 0 and 1.
+Using data represented in Appendix A for every translation, a vector can be created that shows the relation between four criteria (time, price, text matching and cooperation) and final feedbacks. My idea for translators ranking consisted of two elements which both are based on the defined vector. It is formulated as follows where $R_T$ ,$H_T$ and $P_T$ denote ranking value of translator, first element (Harmonic) and second element (Privilege). $\alpha$ is the tuning factor and can be between 0 and 1.
 
 \begin{center}
 $R_T = \alpha H_T + (1-\alpha)P_T$ \\
 \end{center}
 
-The first element ($H_T$) which can be called Harmonic element shows how similar the vector is to well-ranked results and how far it is from bad-ranked results. The similarity is calculated by cosine measure. In the following formula $O_T$ denotes translator's offer and $F_i$ stands for vector of feedback. For each feedback, the feedback rate is shown in $r_i$. The formula is depicted as follows:
+The first element ($H_T$) which can be called Harmonic element shows how similar the vector is to high-ranked results and how far it is from low-ranked results. The similarity is calculated by cosine measure. In the following formula $O_T$ denotes translator's offer and $F_i$ stands for vector of feedback and $r_i$ shows the feedback's rate. The formula is depicted as follows:
 
 \begin{center}
 $H_T = \sum_{i=0}^{number of feedbacks} r_i SIM(O_T, F_i)$ \\
 \end{center}
 
-The second element ($P_T$) which can be called Privilege element shows how good the offered criterion in comparison to a standard value is. In order to find the value, we need a Standard Vector ($S$) which can be achieved by calculating the average of all offered values by translators in every criterion. Here is the formulas for calculating $S$ and $G_T$. $O_{T,c}$ stands for offer value by a translator for a specific criterion. The function $f$ is used for normalizing the value. Finally $n$ denotes number of offers by translators 
+The second element ($P_T$) which can be called Privilege element shows how good the offered criteria are in comparison to a standard value. In order to find the value, we need a Standard Vector ($S$) which can be achieved by calculating the average of all offered values by translators in every criterion. Here is the formulas for calculating $S$ and $G_T$. $O_{T,c}$ stands for offered value by a translator for a specific criterion. The function $f$ is used for normalizing the value. Finally $n$ denotes number of translators' offers.
 
 \begin{center}
-$S = \sum_{i=0}^{n} \frac{O_{T,c}}{n}$ \\
+$S_c = \sum_{i=0}^{n} \frac{O_{T,c}}{n}$ \\
 \end{center}
 
 \begin{center}
-$G_T = \sum_{c=0}^{number of criteria} \frac{f(O_{T,c})}{S_c} $ \\
+$G_T = \sum_{c=0}^{number of criteria} f(\frac{O_{T,c}}{S_c}) $ \\
 \end{center}
 
-I suggest using $\log _2 \left( x \right)$ as function $f$. The reason for selecting base two is decreasing radically the effect of division when offer is more than two times bigger than standard value. The suggested function is depicted in Figure ~\ref{fig:FUNC} :
+I suggest using $f = \log _2 \left( x \right)$. The reason for selecting base two is decreasing radically the effect of division when offer is more than two times bigger than standard value. The suggested function is depicted in Figure ~\ref{fig:FUNC}.
 
 \begin{figure}
   \centering

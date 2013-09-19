@@ -1,6 +1,5 @@
-
-\section{Overview On Reviewed Papers}
-Since the defined problem in 2012 TREC Contextual Suggestion Track is some how similar to the current problem, I focused on reviewing the solution proposed by participants of this Track. In TREC Contextual Suggestion Track, different factors like personal preferences, location and time influence on ranking of venues. I have tried to concentrate on the way different papers have encountered with the ranking problem in order to gain some ideas for current problem.
+\section{Reviewed Papers}
+Since the defined problem in 2012 TREC - Contextual Suggestion Track is some how similar to the current problem, I focused on reviewing the solution proposed by participants of this Track. In Contextual Suggestion Track, different factors like personal preferences, location and time influence on ranking of venues. I have tried to concentrate on the way different papers have encountered with the ranking problem in order to gain some ideas for current problem.
 
 Here is a short brief of some of them:
 
@@ -14,7 +13,7 @@ The represented solution for ranking seems very simple and straightforward. Firs
 The final formula for ranking consisted of some fixed factors which are selected using feedback method. Although the formula seems very clear and practical, the way to achieve the factors is not explained clearly.
 
 \subsection{IRIT \cite{IRIT}}
-I found the paper quite interesting as it acquired the first ranking between other participants. Like some other papers, they also create a Vector Space Model and calculate similarity based on cosine measure. The interesting point is that they distinguish between positive and negative preferences and subtract the similarity of negative preferences from positive ones. Therefore the results are most similar to global positive preferences and most dissimilar to global negative preferences.
+I found the paper quite interesting as it also acquired the first ranking between other participants. Like some other papers, they also create a Vector Space Model and calculate similarity based on cosine measure. The interesting point is that they distinguish between positive and negative preferences and subtract the similarity of negative preferences from positive ones. Therefore the results are most similar to global positive preferences and most dissimilar to global negative preferences.
 
 \subsection{University of Delaware \cite{Delaware}}
 The similarity calculation in the paper is very similar to \cite{IRIT}. The main difference is that it uses average of similarity for negative and positive preferences. Time factor is not considered in rating. After rating the final results are filtered based on time.
