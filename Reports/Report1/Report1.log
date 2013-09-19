@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.5)  17 SEP 2013 23:01
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.5)  19 SEP 2013 10:46
 entering extended mode
 **Report1.tex
 
@@ -546,25 +546,45 @@ File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\svgnam.def"
 File: svgnam.def 2007/01/21 v2.11 Predefined colors according to SVG 1.1 (UK)
 ))
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip53
+\LTright=\skip54
+\LTpre=\skip55
+\LTpost=\skip56
+\LTchunksize=\count102
+\LTcapwidth=\dimen116
+\LT@head=\box27
+\LT@firsthead=\box28
+\LT@foot=\box29
+\LT@lastfoot=\box30
+\LT@cols=\count103
+\LT@rows=\count104
+\c@LT@tables=\count105
+\c@LT@chunks=\count106
+\LT@p@ftn=\toks20
+)
+Class scrartcl Info: longtable captions redefined on input line 12.
+
 ("C:\Program Files\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen116
-\lightrulewidth=\dimen117
-\cmidrulewidth=\dimen118
-\belowrulesep=\dimen119
-\belowbottomsep=\dimen120
-\aboverulesep=\dimen121
-\abovetopsep=\dimen122
-\cmidrulesep=\dimen123
-\cmidrulekern=\dimen124
-\defaultaddspace=\dimen125
-\@cmidla=\count102
-\@cmidlb=\count103
-\@aboverulesep=\dimen126
-\@belowrulesep=\dimen127
-\@thisruleclass=\count104
-\@lastruleclass=\count105
-\@thisrulewidth=\dimen128
+\heavyrulewidth=\dimen117
+\lightrulewidth=\dimen118
+\cmidrulewidth=\dimen119
+\belowrulesep=\dimen120
+\belowbottomsep=\dimen121
+\aboverulesep=\dimen122
+\abovetopsep=\dimen123
+\cmidrulesep=\dimen124
+\cmidrulekern=\dimen125
+\defaultaddspace=\dimen126
+\@cmidla=\count107
+\@cmidlb=\count108
+\@aboverulesep=\dimen127
+\@belowrulesep=\dimen128
+\@thisruleclass=\count109
+\@lastruleclass=\count110
+\@thisrulewidth=\dimen129
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2008/07/08 v3.8m The Babel package
@@ -580,8 +600,8 @@ Language: english 2005/03/30 v3.3o English support from the babel system
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2008/07/08 v3.8m Babel common definitions
-\babel@savecnt=\count106
-\U@D=\dimen129
+\babel@savecnt=\count111
+\U@D=\dimen130
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
@@ -643,46 +663,42 @@ File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\paralist\paralist.sty"
 Package: paralist 2002/03/18 v2.3b Extended list environments (BS)
-\pltopsep=\skip53
-\plpartopsep=\skip54
-\plitemsep=\skip55
-\plparsep=\skip56
-\pl@lab=\toks20
+\pltopsep=\skip57
+\plpartopsep=\skip58
+\plitemsep=\skip59
+\plparsep=\skip60
+\pl@lab=\toks21
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\enumitem\enumitem.sty"
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip57
-\enit@outerparindent=\dimen130
-\enit@toks=\toks21
-\enit@inbox=\box27
-\enitdp@description=\count107
+\labelindent=\skip61
+\enit@outerparindent=\dimen131
+\enit@toks=\toks22
+\enit@inbox=\box31
+\enitdp@description=\count112
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\multicol.sty"
 Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
-\c@tracingmulticols=\count108
-\mult@box=\box28
-\multicol@leftmargin=\dimen131
-\c@unbalance=\count109
-\c@collectmore=\count110
-\doublecol@number=\count111
-\multicoltolerance=\count112
-\multicolpretolerance=\count113
-\full@width=\dimen132
-\page@free=\dimen133
-\premulticols=\dimen134
-\postmulticols=\dimen135
-\multicolsep=\skip58
-\multicolbaselineskip=\skip59
-\partial@page=\box29
-\last@line=\box30
-\mult@rightbox=\box31
-\mult@grightbox=\box32
-\mult@gfirstbox=\box33
-\mult@firstbox=\box34
-\@tempa=\box35
-\@tempa=\box36
-\@tempa=\box37
-\@tempa=\box38
+\c@tracingmulticols=\count113
+\mult@box=\box32
+\multicol@leftmargin=\dimen132
+\c@unbalance=\count114
+\c@collectmore=\count115
+\doublecol@number=\count116
+\multicoltolerance=\count117
+\multicolpretolerance=\count118
+\full@width=\dimen133
+\page@free=\dimen134
+\premulticols=\dimen135
+\postmulticols=\dimen136
+\multicolsep=\skip62
+\multicolbaselineskip=\skip63
+\partial@page=\box33
+\last@line=\box34
+\mult@rightbox=\box35
+\mult@grightbox=\box36
+\mult@gfirstbox=\box37
+\mult@firstbox=\box38
 \@tempa=\box39
 \@tempa=\box40
 \@tempa=\box41
@@ -696,14 +712,18 @@ Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \@tempa=\box49
 \@tempa=\box50
 \@tempa=\box51
-\c@columnbadness=\count114
-\c@finalcolumnbadness=\count115
-\last@try=\dimen136
-\multicolovershoot=\dimen137
-\multicolundershoot=\dimen138
-\mult@nat@firstbox=\box52
-\colbreak@box=\box53
-\multicol@sort@counter=\count116
+\@tempa=\box52
+\@tempa=\box53
+\@tempa=\box54
+\@tempa=\box55
+\c@columnbadness=\count119
+\c@finalcolumnbadness=\count120
+\last@try=\dimen137
+\multicolovershoot=\dimen138
+\multicolundershoot=\dimen139
+\mult@nat@firstbox=\box56
+\colbreak@box=\box57
+\multicol@sort@counter=\count121
 ))
 (C:\Users\Navid\Documents\GitHub\expert-retrieval-translators\Reports\Report1\t
 itle.tex)
@@ -729,19 +749,19 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count117
-\scratchdimen=\dimen139
-\scratchbox=\box54
-\nofMPsegments=\count118
-\nofMParguments=\count119
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count120
-\MPscratchDim=\dimen140
-\MPnumerator=\count121
-\makeMPintoPDFobject=\count122
-\everyMPtoPDFconversion=\toks23
+\scratchcounter=\count122
+\scratchdimen=\dimen140
+\scratchbox=\box58
+\nofMPsegments=\count123
+\nofMParguments=\count124
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count125
+\MPscratchDim=\dimen141
+\MPnumerator=\count126
+\makeMPintoPDFobject=\count127
+\everyMPtoPDFconversion=\toks24
 )
-\AtBeginShipoutBox=\box55
+\AtBeginShipoutBox=\box59
 Package hyperref Info: Link coloring OFF on input line 4.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -749,7 +769,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count123
+\c@section@level=\count128
 )
 LaTeX Info: Redefining \ref on input line 4.
 LaTeX Info: Redefining \pageref on input line 4.
@@ -806,7 +826,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 (C:\Users\Navid\Documents\GitHub\expert-retrieval-translators\Reports\Report1\d
-ata.tex) [2]
+ata.tex)
 (C:\Users\Navid\Documents\GitHub\expert-retrieval-translators\Reports\Report1\r
 eviewedpapers.tex
 
@@ -893,6 +913,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\@ifnextchar' on input line 13.
 
+[2]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\begingroup' on input line 16.
@@ -949,40 +970,126 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\@ifnextchar' on input line 19.
 
-) [3] [4]
+)
 (C:\Users\Navid\Documents\GitHub\expert-retrieval-translators\Reports\Report1\i
-dea.tex) [5]
-(C:\Users\Navid\Documents\GitHub\expert-retrieval-translators\Reports\Report1\f
-uturework.tex) [6]
+dea.tex [3] <diagram.jpg, id=88, 562.1pt x 421.575pt>
+File: diagram.jpg Graphic file (type jpg)
+ <use diagram.jpg>
+Package pdftex.def Info: diagram.jpg used on input line 28.
+(pdftex.def)             Requested size: 341.43306pt x 256.07324pt.
+)
+[4 <C:/Users/Navid/Documents/GitHub/expert-retrieval-translators/Reports/Report
+1/diagram.jpg>]
 (C:\Users\Navid\Documents\GitHub\expert-retrieval-translators\Reports\Report1\R
-eport1.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 23.
+eport1.bbl) [5]
+(C:\Users\Navid\Documents\GitHub\expert-retrieval-translators\Reports\Report1\a
+ppendixA.tex
+Overfull \hbox (55.9042pt too wide) in alignment at lines 3--13
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (55.9042pt too wide) in alignment at lines 13--23
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (55.9042pt too wide) in alignment at lines 23--26
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (55.9042pt too wide) in alignment at lines 26--29
+ [] [] [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 33--33
+\T1/lmr/m/n/10.95 "up-load a file" nicht
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 33--33
+\T1/lmr/m/n/10.95 hoch-laden lässt, son-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+[]|\T1/lmr/m/n/10.95 Die Ei-gen-na-men
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\T1/lmr/m/n/10.95 (latein-is-che Buch-
+ []
+
+
+Underfull \hbox (badness 1831) in paragraph at lines 47--47
+\T1/lmr/m/n/10.95 staben - z.B. nat-ivy)
+ []
+
+
+Underfull \hbox (badness 1303) in paragraph at lines 47--47
+\T1/lmr/m/n/10.95 sti-gen russ-is-chen Text
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\T1/lmr/m/n/10.95 wiedergegeben - das
+ []
+
+
+Underfull \hbox (badness 1067) in paragraph at lines 49--50
+\T1/lmr/m/n/10.95 tra-gung lässt an ein-i-
+ []
+
+
+Overfull \hbox (55.9042pt too wide) in alignment at lines 29--51
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (55.9042pt too wide) in alignment at lines 51--70
+ [] [] [] [] [] [] 
+ []
+
+[6])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 21.
  [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 23.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 21.
 
 (C:\Users\Navid\Documents\GitHub\expert-retrieval-translators\Reports\Report1\R
 eport1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 23.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 23.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 21.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 21.
 Package rerunfilecheck Info: File `Report1.out' has not changed.
-(rerunfilecheck)             Checksum: AB13EC41CCC02F8CA6EFC3AB1D1E5866;604.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 23.
+(rerunfilecheck)             Checksum: FC25211EE11612EA3ED3AD0C693C2C6B;608.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 21.
  ) 
 Here is how much of TeX's memory you used:
- 8785 strings out of 493921
- 130990 string characters out of 3147283
- 248214 words of memory out of 3000000
- 11888 multiletter control sequences out of 15000+200000
- 60315 words of font info for 48 fonts, out of 3000000 for 9000
+ 8875 strings out of 493921
+ 132085 string characters out of 3147283
+ 274980 words of memory out of 3000000
+ 11971 multiletter control sequences out of 15000+200000
+ 63310 words of font info for 49 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 47i,8n,47p,553b,331s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri
-10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on Report1.pdf (7 pages, 116907 bytes).
+ 47i,8n,47p,566b,503s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
+iKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
+nc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex
+.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}<C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/lm/lmsy10.pfb>
+Output written on Report1.pdf (7 pages, 237613 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 24 named destinations out of 1000 (max. 500000)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 161 PDF objects out of 1000 (max. 8388607)
+ 26 named destinations out of 1000 (max. 500000)
+ 78 words of extra memory for PDF output out of 10000 (max. 10000000)
 
