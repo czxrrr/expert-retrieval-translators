@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.5)  10 OCT 2013 11:53
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.30)  30 OCT 2013 18:27
 entering extended mode
 **paper.tex
 (C:\Users\Navid\Documents\GitHub\expert-retrieval-translators\Paper\paper.tex
@@ -117,23 +117,26 @@ LaTeX Font Info:    ... okay on input line 351.
 x)
 (C:\Users\Navid\Documents\GitHub\expert-retrieval-translators\Paper\introductio
 n.tex)
-(C:\Users\Navid\Documents\GitHub\expert-retrieval-translators\Paper\ranking.tex
+(C:\Users\Navid\Documents\GitHub\expert-retrieval-translators\Paper\casestudy.t
+ex
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 5.
+(Font)              <7> on input line 7.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 5.
-) [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
-
-
-]
+(Font)              <5> on input line 7.
+)
+(C:\Users\Navid\Documents\GitHub\expert-retrieval-translators\Paper\methods.tex
+)
 (C:\Users\Navid\Documents\GitHub\expert-retrieval-translators\Paper\evaluation.
-tex)
+tex [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+])
 (C:\Users\Navid\Documents\GitHub\expert-retrieval-translators\Paper\conclusion.
 tex)
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 489.
+(Font)              <8> on input line 492.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 489.
+(Font)              <6> on input line 492.
 
 
 ** Conference Paper **
@@ -152,27 +155,24 @@ Before submitting the final camera ready copy, remember to:
 (C:\Users\Navid\Documents\GitHub\expert-retrieval-translators\Paper\paper.aux) 
 ) 
 Here is how much of TeX's memory you used:
- 947 strings out of 493921
- 17559 string characters out of 3147283
- 71244 words of memory out of 3000000
+ 950 strings out of 493921
+ 17728 string characters out of 3147281
+ 72244 words of memory out of 3000000
  4288 multiletter control sequences out of 15000+200000
  37650 words of font info for 71 fonts, out of 3000000 for 9000
  844 hyphenation exceptions out of 8191
- 26i,12n,19p,713b,242s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 26i,12n,19p,890b,242s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-msy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/time
-s/utmri8a.pfb>
-Output written on paper.pdf (2 pages, 113745 bytes).
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/
+utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on paper.pdf (2 pages, 89573 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
+ 42 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
