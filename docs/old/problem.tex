@@ -1,0 +1,25 @@
+\section{Problem Statement}
+\subsection{Introduction}
+The problem can be defined in domain of on-line translation. Systems in this domain aim to establish a reasonable connection between clients who ask for translation and translators.
+
+In the following paragraph, first the whole scenario and the problem which is tackled in the paper is described. Then, some specific required characteristics of hypothetical system for solving the problem are mentioned.
+
+\subsection{Scenario}
+The client uploads documents to the website and asks for translators in different languages. Based on five criteria, the system starts searching for the best three translators. These criteria are cost, delivery time, frequent cooperation, similarity to previous translations and quality of the translator. Every criterion has also its weight which defines the importance from client's point of view.
+
+Cost, delivery time, frequent cooperation and quality are calculated using existing information in system's database like the schedule of translator, proposed price for each language pair, assessment of administrator of the quality of translation and etc.. Finding the value related to the similarity to previous translations criterion is more complex. In primitive stages of translator's registration and assessment, every translator uploads the documents which she has translated before. In addition, during the cooperation of translator with the company, some other translated documents are gathered in the system. These information should be used to find the best translators for the submitted document. The more relevant previous tasks to current text, the higher value for similarity criterion.
+
+After merging the results of different criteria, the system represents the most appropriate translators to the client.
+
+Following finishing translation task, a qualified proof-reader chose by client reads the translation through and sends some feedbacks or corrections to translator. At the end the proof-reader rates the whole task done by translator. After delivering the translation, user leaves a feedback on the translation.
+
+Design and implement a system for calculating the similarity value as well as an algorithm for retrieving experts (translators) is the aim of the current study.
+
+\subsection{Specifications}
+Some specific characteristics should be mentioned for the project:
+
+\begin{itemize}
+\item Short response time.
+\item Different languages.
+\item While the files are in different formats, the content is retrieved and prepared as plain text in Unicode format.
+\end{itemize}
