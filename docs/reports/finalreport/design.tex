@@ -1,1 +1,18 @@
-\section{System Design}
+\section{Tools and Technologies}
+In this section, the main applied tools, technologies and libraries are briefly described following by their usage in the system.
+
+\begin{itemize}
+	\item \textbf{C\texttt{\#}.NET 4.5:} As the main programming language, the project is developing on C\texttt{\#}.NET 4.5 using Visual Studio 2013 IDE.
+	\item \textbf{ASP.NET 4.5:} It provides the required framework for web programming. MVC.NET is used as the main server side platform.
+	\item \textbf{MS SQL Azure:} As the system is deployed on Windows Azure platform, SQL Azure is selected as relational database.
+	\item \textbf{Windows Azure:} Some special services like Cache, Storage and Service Bus are widely used in the project.
+	\item \textbf{Lucene.NET:} The core of text processing, indexing and search is handled by Lucene. Lucene.NET is implemented by line to line translating from its Java version. While Lucene in Java provides more options, the .NET version is used to keep the integrity of project.
+	\item \textbf{LINQToSQL:} Regarding to high integrity of the tool with MS SQL Server, it is used as ORM (Object-Relational Mapping).
+	\item \textbf{HunAlign\cite{hunalign}:} It is light library which aligns bilingual text on the sentence level. Its input is tokenized and sentence-segmented text in two languages. In the simplest case, its output is a sequence of bilingual sentence pairs (bisentences). In the presence of a dictionary, hunalign uses it, combining this information  with Gale-Church sentence-length information. In the absence of a dictionary, it first falls back to sentence-length information, and then builds an automatic dictionary based on this alignment. Then it realigns the text in a second pass, using the automatic dictionary. The library is used for developing the translation memory in sentence level based on original and translated text.
+	\item \textbf{KnockoutJS:} A JQuery-based library for applying MVVM pattern and associating between DOM and data model.
+	\item \textbf{BreezeJS:} A handy JQuery-based library for declaring object models on client side and executing HTML Verbs integrated with ASP.NET MVC.
+	\item \textbf{AutoMapper:} Widely used for mapping objects specially from object Models to object View Models.
+	\item \textbf{AutoFac:} It is an IoC container for Microsoft .NET which manages the dependencies between classes.
+	\item \textbf{SignalR:} It is a library for ASP.NET that makes it simple to add real-time web functionality. Using the library, we can easily have server-side code push content to the connected clients as it happens, in real-time. Chat and notification systems are developed using this library.
+	\item \textbf{Postsharp:} It is an AOP framework for .NET. Most AOP implementation is based on the library.
+\end{itemize}
