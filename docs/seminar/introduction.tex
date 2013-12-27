@@ -1,9 +1,17 @@
-*** TODO: Introduction ***
+The goal of expertise retrieval is to link humans to expertise areas, and vice versa. In other words, the task of expertise retrieval is to identify a set of persons with relevant expertise for the given query \cite{er} \cite{er-community-aware}.
 
-% The designed framework can be categorized in domain of on-line translation. The framework aims to find the best translator-corrector % combination for a client who seeks for a reasonable offer to translate a document.
+The launch of the Expert Finding task at TREC has generated a lot of interest in expertise retrieval, with rapid progress being made in terms of modeling, algorithms, and evaluation aspects.
 
-% The profile of every translator consists of different aspects like offered price per word, translation time per word, experience and  quality of translation in a specific language pair (source and destination languages). Based on client's document, the system figures out the value of each aspect and offers the first three most related translators. As it is clear, the aspects are in different scales (price in currency, time in minute and etc.). It should also mentioned that the one with best offer in all aspects (lowest price, fastest time, most %similar to previous experience and etc.) may not be the best offer and leads to a low quality translation and unsatisfied client.
+With the development of information retrieval (IR) techniques, many research efforts in this field have been made to address high-level IR and not just traditional document retrieval, such as entity retrieval and expertise retrieval \citep{er-sparse}. Expertise retrieval has received increasing interest since the introduction of an expert finding task in the Text Retrieval Conference (TREC) 2005 \cite{trec2005} \cite{er-community-aware}.
 
-% In order to evaluate the quality of translators and also whole the task, a feedback system for corrector and client is considered. After finishing translator's task, the corrector starts revising the text and leaving a feedback on it. The feedback of corrector which is a number between one to five is used as a base for estimating the proficiency of translator. Then by delivering the task to the client, his feedback is asked. The feedback of client is used to deploy and leverage ranking system.
+Two principal approaches are proposed in \cite{trec2005} based on probabilistic language modeling techniques. They were formalized as so-called candidate models and document models. the candidate-based approach is also referred to as
+profile-based method in builds a textual representation of candidate experts and then rank them based on the query. The document models' idea is to first find documents that are relevant to the topic and then locate the experts associated with these documents \cite{er}.
 
-% In Section II, the designed Translator-Expert Retrieval framework is discussed in detail. Then, Section III summarizes system evolution and achieved results. Finally conclusion is written down in section IV.
+Ranking techniques are mostly one of the essential parts of IR frameworks. In recent years, Learning to Rank (L2R) has been studied extensively specially for document retrieval. It refers to machine learning techniques for training the model in a ranking task \cite{er}. In essence, expert search is a ranking problem and thus the existing L2R techniques can be naturally applied to it \cite{l2r-intro}.
+
+As well as ranking techniques, aggregation functions have a solid effect on the performance of IR systems. Aggregate tasks are those where documents' similarities are not
+the final outcome, but instead an intermediary component. In expert search, a ranking of candidate persons with relevant expertise to a query is generated after aggregation of their related documents \citep{agg-learning}.
+
+This paper addresses the problem of searching translators as expertises. We have applied Learning to Rank in a candidate-based approach. Besides, different aggregation algorithms related to documents of translators has been studied.
+
+The remaining of the paper is organized as follows. In Section \ref{sec:casestudy}, the Translator-Expert Retrieval framework is described in detail. Then, Section \ref{sec:methods} explains methods used in the study. In Section \ref{sec:apply}, we report the result of applied methods on the framework. Finally, we conclude the study in Section \ref{sec:conclusion}.
