@@ -11,8 +11,11 @@ Macdonald et al.\cite{agg-vote} looks to expert search as a voting problem, wher
 
 Later on, focusing on related features discussed before Cummins et al.\cite{agg-gp2} comes up with a novel idea. It uses genetic programming to learn a formula for the weights of document associations within the candidate profiles. The formula denoted as $GP2$ is as follows:
 
-$GP2 = \frac{\sqrt{\sqrt{2/{no\_docs_x}_i}}/(\sqrt{(10/R)+R}}{\sqrt{sq(10/R)+R+sq(10/R)+\sqrt{R*2}}}$
+\begin{align*}
+GP2 = \frac{\sqrt{\sqrt{2/{no\_docs_x}_i}}/(\sqrt{(10/R)+R}}{\sqrt{sq(10/R)+R+sq(10/R)+\sqrt{R*2}}}
+\end{align*}
 
+\noindent 
 where $R$ is the rank of the document in the initial ranking and ${no\_docs_x}_i$ is the total number of documents associated with expert $x_i$.
 
 \subsection{Learning To Rank}
