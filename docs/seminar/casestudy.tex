@@ -1,19 +1,18 @@
-The designed framework can be categorized in domain of on-line translation. It aims to find the best translator-corrector pair for a client who seeks for a reasonable offer to translate a document.
+\section{Case Study}
+\label{sec:casestudy}
+The data flow of expert searching is depicted in Figure\ref{fig:architecture}. The client submits a document and searches translators of a specific target language. Based on query document, the framework figures out offered price, delivery time, proficiency and number of cooperation times related to each translator. The result is processing by a ranking system and the most related translators are offered to the client.
 
-Every expert creates a profile by registering in the framework. The expert can play the role of translator or corrector. The profile consists of offered price per word for translation/correction, translation/correction time per word, experience in a special context and proficiency in a specific language pair (source and destination languages). Based on client's document, the system figures out the value of each aspect and offers the first three most related translator-corrector pairs.
+As it is shown in Figure\ref{fig:architecture}, the essential components of the framework are \textit{Ranking}, \textit{Proficiency Estimator}, \textit{Scheduler} and \textit{Profiler}.
 
-In order to evaluate the proficiency of experts, an evaluation system based on feedbacks of correctors, clients and evaluators is provided. After finishing translator's task, the corrector starts revising the text as well as assessing translation quality. The feedback of corrector which is a number between one to five is used for estimation the proficiency of translator. Then by delivering the translation, client's feedback is asked. The feedback of client is used to deploy and leverage ranking system. Apparently, an evaluation team consisted of business experts are consistently evaluating the quality of ranking system.
-
-In the rest of the section, we denote the framework's elements. As it is depicted in the following formula ,the profile of each expert related to the query is a vector where $q$ is the corresponding query. In the formula, $t_q$ and $c_q$ stand for estimated time and cost proposed by the expert. The prefix $T$ and $C$ stand for role of expert as translator or corrector. $s_q$ denotes the experience or knowledge of expert in a special context which is calculated based on similarity between query document and all previous-translated documents. The technique applied for calculating $s_q$ is explained further. $p$ shows the proficiency of expert and how previous tasks have been estimated by other experts. It is being achieved by calculating the average value of correctors' feedbacks. The value is between one (very bad) to five (perfect).
-
+\begin{figure*}[h]
 \begin{center}
-$\overrightarrow{Profile_{q}} = \{ t_{T,q}, t_{C,q}, c_{T,q}, c_{C,q}, s_q, p \}$ \\
+\includegraphics[scale=0.8]{figures/dataflow.jpg}
+\caption{System Data Flow
+\label{fig:architecture}}
 \end{center}
+\end{figure*}
 
-***Question: How should we handle the underlying relation between $s_q$ and $p$?***
+\textit{Ranking} system uses L2R to return the most related translators to the query. The training data is provided by a group of evaluators who are familiar with business of company. In an evaluation system, they choose a translator between three offered ones. In order to prevent bias in evaluation, the translators are offered randomly and without name and picture. Applied method and results are described in Section \ref{sec:apply}. \textit{Proficiency Estimator} stores the previous-translated documents in the cloud and indexes them using Lucene library. The similarity between query and indexed documents is used as a base for estimation of translator's proficiency. In the next step, calculated similarities are aggregated. The applied aggregation function is described in Section \ref{sec:apply}. \textit{Scheduler} system figures out the delivery time based on timetable of translators. The scheduler builds a special data structure to outperform the response time. The detail of the process is out of scope of the paper .At last, \textit{Profiler} accumulates personal information of translators, their preferences as well as offered price and translation duration per word.
 
-The evaluation results are also denoted as follows. In the following formula $e$ stands for evaluation value which can be between one (very bad) and five (perfect). Because of some practical considerations, delivery time $t$ is used in evaluation process (not separated schedule time of translator and corrector).
+Beside translator, a proofreader selected by the client is revising the final translation. The proofreader assesses the quality of translation from different points of view (grammar, style, accuracy, content and language) as well. The assessment is defined as a value between one (very bad) to five (perfect). As it is discussed in Section \ref{sec:apply}, it is used to evaluate aggregation algorithms for translation proficiency.
 
-\begin{center}
-$\overrightarrow{Evaluation_{q}} = \{ t, c_{T,q}, c_{C,q}, s_{T,q}, s_{C,q}, p_T, p_C, e \}$ \\
-\end{center}
