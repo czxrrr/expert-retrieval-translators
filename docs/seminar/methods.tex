@@ -1,13 +1,19 @@
 \section{Methods}
 \label{sec:methods}
-The subjects which are studied during design of the framework can be classified into two main topics. First aggregating results of similarity between query document and previous translated documents in order to estimate expert's proficiency. Second applying a learning to rank method to find and offer the best experts.
+In this section, we study thoroughly different methods and algorithms regarding to Aggregation Functions and Learning to Rank. The study will shed light on the problem of picking the most appropriate algorithm regarding to the project.
 
 \subsection{Aggregation Functions}
-In order to calculate experience of expert related to client's document, we need to figure out the similarity between query document and all previous-translated documents. 
+As a usual scenario in expert retrieval systems, first each document related to an expert is scored and ranked regarding to query. Then, the top $N$ document scores associated with a candidate expert are aggregated in order to rank the experts. The aggregation function has a big impact on the performance of Expert Retrieval system.
 
-***TODO: Introducing aggregation methods and choosing one for the framework ***
-%The similarity is calculated by Lucene library and is denoted as $SIM$ function. Every pre-translated document is assessed by corrector's feedback ($f'$). In additional to these documents, every translator may submit some other documents which had been translated before and clearly not assessed. In the framework, we assume their quality as medium (two). In the following formula $d_iterator$ and $d_q$ stand for pre-translated and query documents. $n$ and $m$ are the number of pre-translated document inside and outside the framework.
+The effect of different features on aggregation function is is studied in \cite{agg-gp2}. As it is shown, number of documents is tightly related such that the performance of different queries are optimal for different values of $N$. Comparing query-based features using statistical measures, it inferred that the features may not, in general, be able to predict the optimal number of documents to aggregate for each query. Individual Expert Features is discussed in the next step. It is shown that relevant experts are associated with a higher ranked document than non-relevant experts. More interestingly, relevant experts are associated with less documents on average.
 
+Macdonald et al.\cite{agg-vote} looks to expert search as a voting problem, where documents vote for the candidates with relevant expertise. Eleven data fusion as well as three statistically different document weighting were tested. In practice, the approach considers both number of documents and expert features regarding to the ranking score of the documents. The results show that while some of adapted voting techniques are most likely outperform others, the proposed approach is effective when using appropriate one.
+
+Later on, focusing on related features discussed before Cummins et al.\cite{agg-gp2} comes up with a novel idea. It uses genetic programming to learn a formula for the weights of document associations within the candidate profiles. The formula denoted as $GP2$ is as follows:
+
+$GP2 = \frac{\sqrt{\sqrt{2/{no\_docs_x}_i}}/(\sqrt{(10/R)+R}}{\sqrt{sq(10/R)+R+sq(10/R)+\sqrt{R*2}}}$
+
+where $R$ is the rank of the document in the initial ranking and ${no\_docs_x}_i$ is the total number of documents associated with expert $x_i$.
 
 \subsection{Learning To Rank}
-***TODO: Ranking methods goes here. Comparing between Point-wise, Pair-wise and List-wise and choosing the most related one for the framework ***
+TODO
