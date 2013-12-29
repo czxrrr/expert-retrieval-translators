@@ -1,9 +1,9 @@
-\section{System Architecture and Design}
+\section{Architecture and Design}
 The system is designed based on DDD (Data Driven Design) and Multi-Layer Architecture. As it is depicted in Figure \ref{fig:architecture}, the system is consisted of three main layers : Interface, Business and Data Access Layer. Data is passed between the layers using Model objects.
 
-Interface layer can be divided into two main parts. Server side and client side. Server side which is denoted as Application Layer is following MVVC (Model-View, View, Controller) design model. It's main purpose is mapping Model View objects of Interface Layer to Model objects and passing them to Business Layer and vice verse. Client side web pages are designed based on MVVM (Model-View, View, Model) model. Tools used for applying the model are explained in the next section.
+Interface layer can be divided into two main parts. Server side and client side. Server side which is denoted as Application Layer is following MVVC (Model-View, View, Controller) design model. It's main purpose is mapping Model-View objects of Interface Layer to Model objects and passing them to Business Layer and vice verse. Client side web pages are designed based on MVVM (Model-View, View, Model) model. Tools used for applying the model are explained in Section\ref{sec:tools}.
 
-Using AOP (Aspect-Oriented Programming), logging, error handling and security system are designed on top of other layers.
+Using AOP (Aspect-Oriented Programming), logging, error handling and security are designed on top of other layers.
 
 As well as mentioned architectural patterns, following design patterns are used:
 \begin{itemize}

@@ -1,17 +1,19 @@
-\section{Problem Statement}
-The client uploads documents to the website and asks for translators in different languages. Based on four criteria, the system starts searching for the best three translators. These criteria are cost, delivery time, frequent cooperation and text matching. Every criterion has also its weight which defines the importance from client’s point of view.
+\section{Requirements and Scenario}
+In the first step, Translators define their profiles. Each translator is setting a price and duration per word for each language pair. Then, they upload the documents which has been translated before. These documents are used for calculating the similarity.
 
-Each translator is proposing a price for each language pair which is used for calculating final cost. Delivery time is calculated based on the schedule of translator. Finally, in order to find text matching value, the similarity between query document and previous translated documents is aggregated. In primitive steps of registration, every translator uploads the documents has been translated before. These documents are also considered for calculating the similarity.
+In order to search for a translator, the client uploads documents to the website. Based on four criteria, the system starts searching the best three translators. These criteria are cost, delivery time, frequent cooperation and text matching. Every criterion has also its weight which defines its importance from client's point of view.
 
-After merging the results of different criteria, the system represents the most appropriate translators to the client. By choosing the translator and following payment process, the translation starts. After finishing translation, a qualified proof-reader chosen by client revises the text and may send some corrections to the translator. At the end the proof-reader rates the translation from different aspects. 
+Final cost is calculated based on price per word. Delivery time is estimated using the schedule of translator as well as duration per word. Finally, in order to find text matching value, the similarity between query document and previous translated documents is aggregated.
 
-The problems and requirements addressed in the project are as follows:
+After merging the results of different criteria, the system represents the most appropriate translators to the client. By choosing the translator and following payment process, the translator is informed for starting translation. After finishing translation, a qualified proof-reader chosen by client revises the text and may send some corrections to the translator. At the end the proof-reader rates the translation. 
+
+The requirements considered in the project are as follows:
 \begin{itemize}
 	\item wizard-like page for ordering process in a SPA (Single Page Application) structure.
-	\item Indexing previous-translated texts and finding an aggregation function for their similarity values with query document.
-	\item Finding and tuning a ranking function for finding the best three translators among all.
+	\item Indexing previous-translated texts and finding an aggregation function for their similarity values regarding to query document.
+	\item Developing a ranking function in order to find the best three translators among all.
 	\item Calculating delivery time based on translator's schedule.
-	\item Web API interface as well as web interface
+	\item Web as well as Web API interface.
 	\item Payment process.
 	\item Short response time.
 	\item Considering different languages and timezones.

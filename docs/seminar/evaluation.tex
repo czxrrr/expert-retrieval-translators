@@ -3,7 +3,23 @@
 In this section, we applied different approaches on the platform. By comparing the methods, we aim to discover the most appropriate one regarding to the project's characters and data.
 
 \subsection{Aggregation Functions}
-TODO
+Similar to \cite{agg-gp2}, outcome of three algorithms are compared. Top1 and Top5 are selected as two common forms TopN aggregation algorithm. TopN refers to algorithm that summarizes the N top documents (i.e. Top1 only using the top associated document to rank the candidates).
+
+Feedbacks of Proof-readers after every translation are used as a basis for evaluating the algorithms. Since feedbacks are a measure for quality of translation, the more similar the ranking of algorithms to feedbacks are the better it is.
+
+The results of applying Spearman correlation is shown in Table\ref{table:Spearman}. As the outcome shows, GP2 outperforms the other algorithms. In comparison to Top1, Top5 has slightly better performance. The results is also partly the same based on each language-pair.
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline Algorithm & Top1 & Top5 & GP2  \\
+\hline Spearman correlation & 0.049 & 0.076 & 0.14\\
+\hline
+\end{tabular}
+\caption{Comparison between algorithms and feedbacks}
+\label{table:Spearman}
+\end{center}
+\end{table}
 
 \subsection{Learning To Rank}
 TODO
