@@ -3,7 +3,7 @@
 In this section, some special issues during the development of the platform are described.
 
 \subsection{Order}
-Order system is a full client-side web-page following the idea of SPA (Single Page Application) using KnockoutJS and BreezeJS. By applying MVVM model, the data submitted in each step is stored in View-Model and used in the next steps. The system screen-shots of ordering process are shown in Figure\ref{fig:order-1}, Figure\ref{fig:order-2} and Figure\ref{fig:order-3}.  The payment process shown in Figure\ref{fig:order-3} is verified by a third-party service which supports different payment cards.
+Order system is a full client-side web-page following the idea of SPA (Single Page Application) using KnockoutJS and BreezeJS. By applying MVVM model, the data submitted in each step is stored in View-Model and used in the next steps. The system screen-shots of ordering process are shown in Figure\ref{fig:order-1} and Figure\ref{fig:order-2}.  The payment process is verified by a third-party service which supports different payment cards.
 
 \subsection{Machine Learning's Data Accumulating}
 In order to tackle the problem of translators ranking, a system similar to Order is designed. The system aims to accumulate data for Learning To Rank process. Based on query document, it offers three translators and stores client's (evaluator's) choice. In contrast to Order system, it eliminates the pictures and names of translators which prevents bias in final answers by estimators and puts emphasis on the presented criteria. A screen-shot of the system related to selecting the translators is shown in Figure\ref{fig:dataaccumulating}. In the next step, the data gathered by the system is applied on Learning to Rank algorithms which aim to discover the underlying pattern for proposing the best translators. The details are described in seminar lecture related to the project. 
@@ -26,7 +26,7 @@ Using Signal-R capabilities, the Chat system is designed and developed. Related 
 \includegraphics[scale=\figurescaling]{figures/order-1.jpg}
 \caption{Order - entering primitive data
 \label{fig:order-1}}
-\includegraphics[scale=\figurescaling]{figures/order-1.jpg}
+\includegraphics[scale=\figurescaling]{figures/order-2.jpg}
 \caption{Order - selecting translator
 \label{fig:order-2}}
 \end{center}
@@ -34,23 +34,20 @@ Using Signal-R capabilities, the Chat system is designed and developed. Related 
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=\figurescaling]{figures/order-1.jpg}
-\caption{Order - payment process
-\label{fig:order-3}}
-\includegraphics[scale=\figurescaling]{figures/order-1.jpg}
+\includegraphics[scale=\figurescaling]{figures/dataaccumulation.jpg}
 \caption{Data Accumulating - selecting translator
 \label{fig:dataaccumulating}}
+\includegraphics[scale=\figurescaling]{figures/chat.jpg}
+\caption{Chat system
+\label{fig:chat}}
 \end{center}
 \end{figure}
 
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=\figurescaling]{figures/chat.jpg}
+\includegraphics[scale=\figurescaling]{figures/scheduling.jpg}
 \caption{Scheduling
 \label{fig:scheduling}}
-\includegraphics[scale=\figurescaling]{figures/chat.jpg}
-\caption{Chat system
-\label{fig:chat}}
 \end{center}
 \end{figure}
