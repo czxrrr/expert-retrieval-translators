@@ -1,20 +1,23 @@
-\section{Requirements and Scenario}
-In the first step, Translators define their profiles. Each translator is setting a price and duration per word for each language pair. Then, they upload the documents which has been translated before. These documents are used for calculating the similarity.
+\section{Scenario and Requirements}
+\label{sec:scenario}
+In this section, first the usual system scenario is described in detail. Then, some specific requirements related to system development are specified.
 
-In order to search for a translator, the client uploads documents to the website. Based on four criteria, the system starts searching the best three translators. These criteria are cost, delivery time, frequent cooperation and text matching. Every criterion has also its weight which defines its importance from client's point of view.
+By registering in the platform, the translators start to declare their profiles. Regarding to each language pair, the price and duration per word is set. In the next step, the translators upload their previous-translated documents. The documents are processed and used in text matching as well as  translation memory systems. As the last step, the translators fill the time table using schedule system. They specify the time slots in which they are ready to work and potentially can be hired by clients.
 
-Final cost is calculated based on price per word. Delivery time is estimated using the schedule of translator as well as duration per word. Finally, in order to find text matching value, the similarity between query document and previous translated documents is aggregated.
+The client starts searching for translators by uploading a document. Based on four criteria, the system searches and retrieves the three most-related translators. These criteria are cost, delivery time, frequent cooperation and text matching. Related to each criterion, a weight is defined which specifies importance of the criterion from client's point of view.
 
-After merging the results of different criteria, the system represents the most appropriate translators to the client. By choosing the translator and following payment process, the translator is informed for starting translation. After finishing translation, a qualified proof-reader chosen by client revises the text and may send some corrections to the translator. At the end the proof-reader rates the translation. 
+Using the profiles of the translators as well client's document, the value for each criteria is estimated. Cost is calculated based on price per word and the number of words in the document. Delivery time is estimated using the schedule of translator, duration per word as well as the number of words. Finally, text matching value is computed by processing the text and aggregating the similarity values between the query document and the previous-translated documents.
+
+After achieving the values of different criteria, the system ranks the translators and represents the three most-related ones to the client. The client chooses one and follows payment process. By purchasing the order, the platform informs the translator and asks for confirmation. During translation, the client and translator are in contact using a chat system. After finishing translation, a qualified proof-reader chosen by client revises the text and may send some corrections to the translator. At the end, the proof-reader assesses the quality of translation from different points of view (grammar, style, accuracy, content and language).
 
 The requirements considered in the project are as follows:
 \begin{itemize}
-	\item wizard-like page for ordering process in a SPA (Single Page Application) structure.
-	\item Indexing previous-translated texts and finding an aggregation function for their similarity values regarding to query document.
+	\item Wizard-like page for purchasing the order in a SPA (Single Page Application) structure.
+	\item Indexing previous-translated texts and finding a function for aggregating their similarity values regarding to query document.
 	\item Developing a ranking function in order to find the best three translators among all.
 	\item Calculating delivery time based on translator's schedule.
-	\item Web as well as Web API interface.
-	\item Payment process.
+	\item Web-Page as well as Web-API interface.
+	\item Supporting payment process for different payment cards and methods.
 	\item Short response time.
 	\item Considering different languages and timezones.
 \end{itemize}

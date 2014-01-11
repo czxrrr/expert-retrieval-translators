@@ -1,11 +1,56 @@
 \section{Development}
+\label{sec:development}
 In this section, some special issues related to development of different components are described.
 
 \subsection{Order}
-Ordering page is a full client-side page following the idea of SPA (Single Page Application) using KnockoutJS and BreezeJS. Complex business of the company in applying query, offering translators and purchasing order urges using design models and standards.
+Ordering page is a full client-side page following the idea of SPA (Single Page Application) using KnockoutJS and BreezeJS. By applying MVVM model, the data submitted in each step is stored in View-Model and used in the next steps. The system screen-shots of ordering process are shown in Figure\ref{fig:order-1}, Figure\ref{fig:order-2} and Figure\ref{fig:order-3}.  The payment process shown in Figure\ref{fig:order-3} is verified by a third-party service which supports different payment cards.
+
 \subsection{Machine Learning's Data Accumulating}
-In order to tackle the problem of translator's ranking, a data accumulating system is designed. Similar to Order, based on query document it offers three translators and stores client's choice. The data gathered by the system is used in a Machine Learning program using Learning to Rank algorithms. It aims to discover the underlying pattern for proposing the translators. The details of the project is described in seminar lecture related to the project. In contrast to Order system, the system eliminates translator's picture and name which prevents bias in final answer by estimator and puts emphasis on the presented criteria.
+In order to tackle the problem of translators ranking, a system similar to Order is designed. The system aims to accumulate data for Learning To Rank process. Based on query document, it offers three translators and stores client's (evaluator's) choice. In contrast to Order system, it eliminates the pictures and names of translators which prevents bias in final answers by estimators and puts emphasis on the presented criteria. A screen-shot of the system related to selecting the translators is shown in Figure\ref{fig:dataaccumulating}. In the next step, the data gathered by the system is applied on Learning to Rank algorithms which aim to discover the underlying pattern for proposing the best translators. The details of the project is described in seminar lecture related to the project. 
+
 \subsection{Text Matching}
-Using Lucene, translator's documents are stored regarding to their languages. In order to achieve the final text matching value, the similarity between each document and query document is calculated. The main problem here is the way to  aggregate result scores. As the problem is addressed in Seminar lecture, GP2\cite{gp2} algorithm is implemented.
+Using Lucene, the documents of translators are categorized, indexed and stored based on their languages. In order to achieve the final text matching value, the similarity between each document and query document is calculated. The main problem here is the way to  aggregate result scores. As the problem is addressed in Seminar lecture, GP2\cite{gp2} algorithm is implemented.
+
 \subsection{Translation Memory}
-As it's mentioned before, the aim of Translation Memory system is helping the translators to exploit their previous-translated texts in their new translations. In order to develop the system, first HunAlign library is used for aligning the sentences of one text with the sentences of its corresponding text in another language. Although the algorithm is very error-prone specially for complex texts, adding dictionary and using rather simple and straightforward texts lead to more reasonable results. At the end, Lucene indexes the text and provides searching abilities.
+As it is mentioned before, the aim of Translation Memory system is helping the translators to exploit their previous-translated texts in their new translations. In order to develop the system, first HunAlign library is used for aligning the sentences of one text with the sentences of its corresponding text in the other language. While the algorithm tends to be error-prone in its basic version for complex texts, by extending dictionary and using rather simple and straightforward texts, reasonable aligned sentences were achieved. At the end, Lucene indexes the text and provides searching abilities.
+
+\subsection{Scheduling}
+The system is also designed following the SPA idea and using Java-Script libraries and Web-API. Figure\ref{fig:scheduling} depicts the schedule of an arbitrary translator.
+
+\subsection{Chat}
+Using Signal-R capabilities, the Chat system is designed and developed. Related interfaces for meeting room as well as chatting with help-desk user are shown in Figure\ref{fig:chat}.
+
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=\figurescaling]{figures/order-1.jpg}
+\caption{Order - entering primitive data
+\label{fig:order-1}}
+\includegraphics[scale=\figurescaling]{figures/order-1.jpg}
+\caption{Order - selecting translator
+\label{fig:order-2}}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=\figurescaling]{figures/order-1.jpg}
+\caption{Order - payment process
+\label{fig:order-3}}
+\includegraphics[scale=\figurescaling]{figures/order-1.jpg}
+\caption{Data Accumulating - selecting translator
+\label{fig:dataaccumulating}}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=\figurescaling]{figures/chat.jpg}
+\caption{Scheduling
+\label{fig:scheduling}}
+\includegraphics[scale=\figurescaling]{figures/chat.jpg}
+\caption{Chat system
+\label{fig:chat}}
+\end{center}
+\end{figure}
