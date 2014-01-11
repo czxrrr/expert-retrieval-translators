@@ -2,11 +2,11 @@
 \label{sec:architecture}
 The system is designed based on DDD (Data Driven Design) and Multi-Layer Architecture. As it is depicted in Figure \ref{fig:architecture}, the system consists of three main layers : Interface, Business and Data Access Layer. Data is passed between the layers using Model objects.
 
-Interface layer is divided into two main parts. Server and client side. Server side which is denoted as Application Layer is following MVVC (Model-View, View, Controller) design model. Its main purpose is mapping Model-View objects of Interface Layer to Model objects and passing them to Business Layer and vice versa. Client-side web pages are designed based on MVVM (Model-View, View, Model) model. Tools used for developing the model are explained in Section \ref{sec:tools}.
+Interface layer is divided into two main parts. Server- and client-side. Server-side which is denoted as Application Layer is following MVVC (Model-View, View, Controller) design model. Its main purpose is mapping Model-View objects of Interface Layer to Model objects and passing them to Business Layer and vice versa. Client-side web pages are designed based on MVVM (Model-View, View, Model) model. Tools used for developing the model are explained in Section \ref{sec:tools}.
 
-Using AOP (Aspect-Oriented Programming), logging, error handling and security systems are designed on top of other layers.
+Using AOP (Aspect-Oriented Programming), logging, error handling and security systems are developed on top of other layers.
 
-As well as mentioned architectural patterns, following design patterns are used:
+As well as mentioned architectural design patterns, following implementation design patterns are used:
 \begin{itemize}
 	\item Dependency Injection and Inversion of Control implemented in Interface Layer
 	\item Singleton Repository in Data Access Layer
@@ -15,7 +15,7 @@ As well as mentioned architectural patterns, following design patterns are used:
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.9]{figures/architecture.jpg}
+\includegraphics[scale=0.8]{figures/architecture.jpg}
 \caption{System Architecture
 \label{fig:architecture}}
 \end{center}
