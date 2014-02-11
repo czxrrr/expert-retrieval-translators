@@ -7,22 +7,39 @@ In order to compare different aggregation functions, similar to \citet{agg-gp2} 
 
 Feedbacks of proof-readers after every translation are used as a basis for evaluating the algorithms. Since feedbacks are a measure for quality of translation, the more similar the ranking of algorithms to feedbacks are the better it is. 
 
-The calculation is done based on $181$ records of purchased orders. The coefficient values of applying Pearson Correlation ($r$) and Spearman's Rank Order Correlation ($r_s$) are shown in Table \ref{table:Spearman}. TODO: Significance Test . 
+In order to calculate the correlation value, we applied Spearman Rank Order and Kendall Rank Correlation as two common methods. Table \ref{table:correlation} shows the results of Spearman correlation coefficient ($r_s$) and Kendall's tau coefficient ($\tau$) using $181$ records of purchased orders. Table \ref{table:signtest} represents the Significance Test of both methods calculated by R.
 
-The outcome shows an approximately weak correlation between aggregation functions and feedbacks of proof-readers. Nevertheless among the introduced algorithms, $GP2$ outperforms the others. In comparison to $Top1$, $Top5$ has slightly better performance. The results are also nearly the same when comparing based on language-pairs.
+As it is usual in many cases, the coefficient value of Spearman is slightly higher than Kandell's. The outcome shows an approximately weak correlation between aggregation functions and feedbacks of proof-readers. TODO about significance test??.
+
+Comparing the algorithms, $GP2$ outperforms the others in both correlation tests. In comparison to $Top1$, $Top5$ has slightly better performance. The results are also nearly the same when comparing based on language-pairs.
 
 \begin{table}
 \begin{center}
 \scalebox{1.2}{
 \begin{tabular}{p{1cm}|c|c|c|}
 \cline{2-4} & Top1 & Top5 & GP2  \\
-\hline \multicolumn{1}{ |c| }{$r$} & 0.018 & 0.063 & 0.117\\
-\hline \multicolumn{1}{ |c| }{$r_s$} & 0.052 & 0.087 & 0.145\\
+\hline \multicolumn{1}{ |c| }{$r_s$} & 0.052 & 0.089 & 0.145\\
+\hline \multicolumn{1}{ |c| }{$\tau$} & 0.034 & 0.059 & 0.102\\
 \hline
 \end{tabular}
 }
-\caption{Comparison between algorithms and feedbacks}
-\label{table:Spearman}
+\caption{Correlation Test Between Algorithms and Proof-readers' Feedbacks}
+\label{table:correlation}
+\end{center}
+\end{table}
+
+\begin{table}
+\begin{center}
+\scalebox{1.2}{
+\begin{tabular}{p{1cm}|c|c|c|}
+\cline{2-4} & Top1 & Top5 & GP2  \\
+\hline \multicolumn{1}{ |c| }{$r_s$} & 0.4866 & 0.2295 & 0.05038\\
+\hline \multicolumn{1}{ |c| }{$\tau$} & 0.5157 & 0.2562 & 0.05263\\
+\hline
+\end{tabular}
+}
+\caption{P-Value of Significance of Correlation Test Algorithms}
+\label{table:signtest}
 \end{center}
 \end{table}
 
