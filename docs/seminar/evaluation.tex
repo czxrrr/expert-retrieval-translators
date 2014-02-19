@@ -45,3 +45,21 @@ Comparing the algorithms, $GP2$ outperforms the others in both correlation tests
 
 \subsection{Learning To Rank}
 TODO
+
+\begin{table}
+\begin{center}
+\scalebox{1.2}{
+\begin{tabular}{|c|c|c|}
+\hline Method & NDCG & ERR  \\
+\hline RankNet & 0.8758 & 0.3943\\
+\hline RankBoost & 0.9089 & 0.4325\\
+\hline AdaRank & 0.857 & 0.3991\\
+\hline ListNet & 0.9151 & 0.4391\\
+\hline LambdaMART & \textbf{0.9297} & \textbf{0.4467}\\
+\hline
+\end{tabular}
+}
+\caption{Results of Applying Learning to Rank Methods based on NDCG and ERR evaluation measures}
+\label{table:l2rresult}
+\end{center}
+\end{table}
