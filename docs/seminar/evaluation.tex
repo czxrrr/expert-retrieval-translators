@@ -44,18 +44,28 @@ Comparing the algorithms, $GP2$ outperforms the others in both correlation tests
 \end{table}
 
 \subsection{Learning To Rank}
-TODO
+In order to accumulate required data to achieve translators' ranking model, we conduct a survey using eight human annotators. Each question of survey represents a situation in which three translators each with four criteria are proposed. Based on \textit{total order} strategy, annotators should rate them from one to three. The accumulated data has $400$ situations consists of $1200$ annotations.
+
+In order to apply Learning to Rank algorithms on data, we use RankLib library \footnote{http://sourceforge.net/p/lemur/wiki/RankLib}. Each method is calculated using 10-Fold Cross-Validation by splitting the data in train, validation and test datasets. We select $5$ learning to rank methods, three pairwise and two listwise. 
+
+In order to evaluate the results, NDCG and ERR measures are selected. 
+
+In order to evaluate the results, we need to choose an evaluation measure which applies on whole the list (with $3$ items) and not a portion of that. Therefore just relevance grading evaluation measures like DCG, NDCG and ERR can be used. In current study, we use NDGC and ERR both with rank position at $3$.
+
+TODO discussion about the results.
 
 \begin{table}
 \begin{center}
 \scalebox{1.2}{
-\begin{tabular}{|c|c|c|}
-\hline Method & NDCG & ERR  \\
-\hline RankNet & 0.8758 & 0.3943\\
-\hline RankBoost & 0.9089 & 0.4325\\
-\hline AdaRank & 0.857 & 0.3991\\
-\hline ListNet & 0.9151 & 0.4391\\
-\hline LambdaMART & \textbf{0.9297} & \textbf{0.4467}\\
+\begin{tabular}{|c|c|c|c|c|}
+\hline \multirow{2}{*}{Method} & \multicolumn{2}{ c| }{NDCG@3} & \multicolumn{2}{ c| }{ERR@3}  \\
+\cline{2-5} & Result & Random & Result & Random \\
+\hline Random Ranker & 0.832 & 0.832 & 0.375 & 0.378 \\
+\hline RankNet & 0.876 & 0.834 & 0.394 & 0.378 \\
+\hline RankBoost & 0.909 & 0.831 & 0.432 & 0.374 \\
+\hline LambdaMART & \textbf{0.93} & 0.832 & \textbf{0.447} & 0.373 \\
+\hline AdaRank & 0.857 & 0.83 & 0.399 & 0.373 \\
+\hline ListNet & 0.915 & 0.831 & 0.439 & 0.375 \\
 \hline
 \end{tabular}
 }
@@ -63,3 +73,13 @@ TODO
 \label{table:l2rresult}
 \end{center}
 \end{table}
+
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.5]{figures/l2rdiagram.png}
+\caption{Learning to Rank Results
+\label{fig:l2rdiagram}}
+\end{center}
+\end{figure}
+
