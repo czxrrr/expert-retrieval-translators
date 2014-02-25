@@ -1,3 +1,9 @@
-\section{Conclusion}
+\section{Conclusion and Future Work}
 \label{sec:conclusion}
-TODO
+In the paper, we put forward a comprehensive solution for implementation and design of a translator-expert retrieval system. As well as system architecture, we thoroughly study the obstacles and pitfalls in implementation of such a system. Document aggregation as well as ranking problems are two main issues thoroughly discussed in the paper and followed by provided solutions.
+
+The first issue concerns with the comparison of the aggregation methods. The aggregation methods estimate the proficiency of each translator based on the similarity values of the previous translated documents with the query document. Using the assessment of the proof-readers on the final translation as the golden data, we compare three aggregation methods. Finally, GP2 method shows better performance in comparison to the others with reasonable good results.
+
+The second issue tackles the problem of experts ranking. By applying different learning to rank algorithms, we obtain a ranking model based on linear regression with fairly good performance. The model's performance is approved by both NDCG and ERR evaluation measures. Feature analysis of data indicates the importance of price and delivery time in comparison to the other features for the the human annotators.
+
+Recently, different aspects of expert retrieval platforms drawing an increasing interest. Based on the current study, we aim to accomplish a comprehensive aggregation method regarding to the translation context in the following studies.
