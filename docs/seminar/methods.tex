@@ -12,7 +12,7 @@ The effect of different features on aggregation function is studied in \citet{ag
 Later on, focusing on related features discussed before \citet{agg-gp2} introduces a new aggregation method. It uses genetic programming to learn a formula for the weights of document associations within the candidate profiles. The formula denoted as $GP2$ is as follows:
 
 \begin{align*}
-GP2 = \frac{\sqrt{\sqrt{2/{no\_docs_x}_i}}/(\sqrt{(10/R)+R}}{\sqrt{sq(10/R)+R+sq(10/R)+\sqrt{R*2}}}
+GP2 = \frac{\sqrt{\sqrt{2/{no\_docs_x}_i}}/(\sqrt{(10/R)+R})}{\sqrt{sq(10/R)+R+sq(10/R)+\sqrt{R*2}}}
 \end{align*}
 
 \noindent 
@@ -23,38 +23,37 @@ Learning to rank refers to machine learning techniques for training the model in
 
 In learning to rank approach, the ranking problem is transformed to classification, regression and ordinal classification, and existing methods and techniques for solving machine learning problems are applied. As \citet{l2r-intro} points out the relation between learning to rank and ordinal classification, in ranking, one cares more about accurate ordering of objects, while in ordinal classification, one cares more about accurate ordered-categorization of objects.
 
-One primitive step in accumulating data required for learning to rank, is relevance judgment done by human annotators. \citet{l2r-book} introduces three main strategies as follows.
+One primitive step in accumulating data required for learning to rank, is relevance judgment normally done by human annotators. \citet{l2r-book} introduces three main strategies as follows.
 \begin{itemize}
-\item \textit{Relevance degree}: It specifies whether an object is relevant or not to the query. It can be either in binary judgment or by specifying the degree of relevance (e.g., Perfect, Excellent, Good, Fair, or Bad).
-\item \textit{Pairwise preference}: A pair of objects are compared in order to specify which one is more relevant with regards to a query.
-\item \textit{Total order}: The total order of all object with respect to a query is specified.
+\item \textit{Relevance degree}: In this method, the annotator specifies whether an object is relevant or not to the query. It can be either in binary judgment or by specifying the degree of relevance (e.g., Perfect, Excellent, Good, Fair, or Bad).
+\item \textit{Pairwise preference}: The annotator compares a pair of objects in order to specify which one is more relevant with regards to a query.
+\item \textit{Total order}: The annotator specifies the total order of all objects with respect to a query by rating each object.
 \end{itemize}
 
-Among the three mentioned kinds of judgments, since the first is the easiest to obtain, it is the most popularly used judgment. While the third kind is more accurate but tedious for human annotators.
+Among the three mentioned kinds of judgments, the first one is the most popularly used judgment since is the easiest to obtain. While the third one is more accurate but laborious for human annotators.
 
 The learning to rank techniques are categorized in three main groups: \textit{Pointwise}, \textit{Pairwise} and \textit{Listwise}.
 
-In the pointwise approach, the ranking problem is transformed to classification, regression or ordinal classification. Therefore, the group structure of ranking is ignored in this approach \citep{l2r-intro}.
+In the pointwise approach, the ranking problem is transformed to classification, regression or ordinal classification. Therefore, the group structure of ranking is ignored in this approach \citep{l2r-intro}. Linear or polynomial regression are widely used methods regarding to the approach.
 
-The pairwise approach transforms the ranking problem into pairwise classification or regression. In fact, it cares about the relative order between two documents. In the pairwise approach, the group structure of ranking is also ignored \citep{l2r-intro}. Here is a brief explanation of some of widely used pairwise algorithms:
+The pairwise approach transforms the ranking problem into pairwise classification or regression. In fact, it cares about the relative order between two documents. Similar to the pointwise, the pairwise approach also ignores the group structure of ranking\citep{l2r-intro}. Here is a brief explanation of some pairwise algorithms:
 
 \begin{itemize}
 \item \textit{RankNet} \citep{l2r-ranknet}: Widely applied by commercial search engines, it uses gradient descent method and neural network to model the underlying ranking function.
-\item \textit{RankBoost} \citep{l2r-rankboost}: It adopts AdaBoost algorithm for the classification over document pairs.
+\item \textit{RankBoost} \citep{l2r-rankboost}: It adopts AdaBoost algorithm for the classification over the object pairs.
 \item \textit{LambdaRank} \citep{l2r-lambdarank}: It considers the evaluation measures to set its pair weight. In particular, the evaluation measures (which are position based) are directly used to define the gradient with respect to each document pair in the training process.
-\item \textit{LambdaMART} \citep{l2r-lambdamart}: It combines the strengths of boosted tree classification and \textit{LambdaRank}.
+\item \textit{LambdaMART} \citep{l2r-lambdamart}: It combines the strengths of boosted tree classification and LambdaRank.
 \end{itemize}
 
-The listwise approach takes the entire set of documents associated with a query in the training data as the input and predicts their ground truth labels \citep{l2r-book}. The group structure of ranking is maintained and
-ranking evaluation measures can be more directly incorporated into the loss functions in learning \citep{l2r-intro}. In the following, two common listwise algorithms are briefly discussed:
+The listwise approach takes the entire set of documents associated with a query in the training data as the input and predicts their ground truth labels \citep{l2r-book}. In contradiction to two previous approaches, it maintains the group structure of ranking. In addition, ranking evaluation measures can be more directly incorporated into the loss functions in learning \citep{l2r-intro}. In the following, two common listwise algorithms are briefly discussed:
 
 \begin{itemize}
 \item \textit{AdaRank} \citep{l2r-adarank}: It applies the evaluation measures on the framework of Boosting and focuses on effectively optimization.
 \item \textit{ListNet} \citep{l2r-listnet}: It uses different probability distributions in order to define the loss function.
 \end{itemize}
 
-As the different data-set are compared in \citet{l2r-book}, listwise techniques are in general the most effective among the others. However, the choice of the learning evaluation measure and the rank cutoff may have a noticeable impact on the effectiveness of the learned model \citep{l2r-when}.
+\citet{l2r-book} compares the algorithms by applying on different data-sets. It concludes that listwise techniques are in general the most effective among the others. However, the choice of the learning evaluation measure and the rank cutoff may have a noticeable impact on the effectiveness of the learned model \citep{l2r-when}.
 
-A highly important point in all kinds of information retrieval systems is evaluation of results. The evaluation on the performance of a ranking model is carried out by comparison between the ranking lists output by the model and the ranking lists given as the ground truth \citep{l2r-intro}.Some common IR evaluation methods like Mean average precision (MAP), [Normalized] Discounted Cumulative Gain ([N]DCG), Mean Reciprocal Rank (MRR) are also widely user in leaning to rank evaluation. Among the mentioned metrics, DCG/NDCG is the only one used for graded relevance.
+A critical point in all kinds of information retrieval systems is evaluation of results. The evaluation on the performance of a ranking model is carried out by comparison between the ranking lists output of the model and the ranking lists given as the ground truth. Some common IR evaluation methods like Mean average precision (MAP), [Normalized] Discounted Cumulative Gain ([N]DCG), Mean Reciprocal Rank (MRR) are also widely user in leaning to rank evaluation. Among the mentioned metrics, DCG/NDCG is the only one used for graded relevance.
 
 Recently, \citet{l2r-err} have proposed a new evaluation metrics called Expected Reciprocal Rank (ERR) which claims to model user's satisfaction with search results better than the DCG metric. \citet{l2r-err} addresses the underlying independence assumption of DCG that a document in a given position has always the same gain and discount independently of the documents shown above it. It asserts that based on research on modeling user click behavior \citep{l2r-clickmodel1,l2r-clickmodel2}, the likelihood a user examines the document at rank $i$ is dependent on how satisfied the user was with previously observed documents in the ranked list. In other words, it assumes that a user is more likely to stop browsing if they have already seen one or more highly relevant documents. By presenting ERR formula in \cite{l2r-err}, it claims that results reflects real user browsing behavior better and quantifies user satisfaction more accurately than DCG.
