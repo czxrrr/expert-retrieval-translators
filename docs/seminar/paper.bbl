@@ -1,0 +1,97 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+
+\bibitem{er}
+Balog, Krisztian, Fang, Y., de~Rijke, M., Serdyukov, P., Si., L.: Expertise
+  Retrieval - Foundations and Trends in Information Retrieval 6, pp. 127--256.
+  No. 2--3 (2012)
+
+\bibitem{er-sparse}
+Balog, K., Bogers, T., Azzopardi, L., de~Rijke, M., van~den Bosch, A.: Broad
+  expertise retrieval in sparse data environments. SIGIR  (2007)
+
+\bibitem{as89}
+Best, D.J., Roberts, D.E.: Algorithm as 89: The upper tail probabilities of
+  spearman's rho. Journal of the Royal Statistical Society. Series C (Applied
+  Statistics)  24(3) (1975)
+
+\bibitem{l2r-lambdarank}
+Burges, C., C.J., Ragno, Robert, Le, V., Q.: Learning to rank with nonsmooth
+  cost functions. MIT Press (2006)
+
+\bibitem{l2r-ranknet}
+Burges, C., Shaked, T., Renshaw, E., Lazier, A., Deeds, M., Hamilton, N.,
+  Hullender, G.: Learning to rank using gradient descent. In: ICML '05:
+  Proceedings of the 22nd international conference on Machine learning. ACM
+  Press, New York, NY, USA (2005)
+
+\bibitem{l2r-clickmodel2}
+Büttcher, S., Clarke, C.L.A., Yeung, P.C.K., et~al.: Reliable information
+  retrieval evaluation with incomplete and biased judgements (2007)
+
+\bibitem{trec2005}
+Cao, Y., Liu, J., Bao, S., Li, H.: Research on expert search at enterprise
+  track of trec 2005. TREC  (2005)
+
+\bibitem{l2r-listnet}
+Cao, Z., Qin, T., Liu, T.Y., Tsai, M.F., Li, H.: Learning to rank: From
+  pairwise approach to listwise approach. In: Proceedings of the 24th
+  International Conference on Machine Learning. pp. 129--136. ICML '07, ACM,
+  New York, NY, USA (2007), \url{http://doi.acm.org/10.1145/1273496.1273513}
+
+\bibitem{l2r-err}
+Chapelle, O., Zhang, Y.: Expected reciprocal rank for graded relevance. In:
+  CIKM'09, NOVEMBER 2–6, 2009, HONG KONG, CHINA. ACM (2009)
+
+\bibitem{l2r-clickmodel1}
+Craswell, N., Zoeter, O., Taylor, M., Ramsey, B.: An experimental comparison of
+  click position-bias models. In: WSDM '08: Proceedings of the international
+  conference on Web search and web data mining. ACM, New York, NY, USA (2008)
+
+\bibitem{agg-gp2}
+Cummins, Ronan, Lalmas, M., O'Riordan, C.: Learning aggregation functions for
+  expert search. ECAI  (2010)
+
+\bibitem{er-community-aware}
+Deng, Hongbo, King, I., Lyu., M.R.: Enhanced models for expertise retrieval
+  using community-aware strategies. Systems Man and Cybernetics Part B:
+  Cybernetics IEEE Transactions  (2012)
+
+\bibitem{l2r-rankboost}
+Freund, Y., Iyer, R., Schapire, R.E., Singer, Y.: An efficient boosting
+  algorithm for combining preferences (1998)
+
+\bibitem{l2r-intro}
+Hang, L.I.: A short introduction to learning to rank. IEICE TRANSACTIONS on
+  Information and Systems  (2011)
+
+\bibitem{l2r-book}
+Lie, T.Y.: Learning to rank for information retrieval. Foundations and Trends
+  in Information Retrieval. Springer (2011)
+
+\bibitem{agg-vote}
+Macdonald, Craig, Ounis, I.: Voting for candidates: adapting data fusion
+  techniques for an expert search task. the 15th ACM international conference
+  on Information and knowledge management  (2006)
+
+\bibitem{agg-learning}
+Macdonald, Craig, Ounis, I.: Learning models for ranking aggregates. Advances
+  in Information Retrieval. Springer Berlin Heidelberg  (2011)
+
+\bibitem{l2r-when}
+Macdonald, C., Santos, R.L., Ounis, I.: The whens and hows of learning to rank
+  for web search. Inf. Retr.  16(5),  584--628 (Oct 2013),
+  \url{http://dx.doi.org/10.1007/s10791-012-9209-9}
+
+\bibitem{l2r-lambdamart}
+Wu, Q., Burges, C.J.C., Svore, K.M., Gao, J.: Adapting boosting for information
+  retrieval measures. Springer Science (2009)
+
+\bibitem{l2r-adarank}
+Xu, J., Li, H.: Adarank: A boosting algorithm for information retrieval. In:
+  Proceedings of the 30th Annual International ACM SIGIR Conference on Research
+  and Development in Information Retrieval. pp. 391--398. SIGIR '07, ACM, New
+  York, NY, USA (2007), \url{http://doi.acm.org/10.1145/1277741.1277809}
+
+\end{thebibliography}
