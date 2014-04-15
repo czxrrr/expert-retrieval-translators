@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2013.7.15)  13 APR 2014 20:32
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2013.7.15)  16 APR 2014 00:57
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -843,28 +843,25 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 {/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) (./cas
 estudy.tex
-Overfull \hbox (2.68088pt too wide) in paragraph at lines 16--1
-[]\T1/lmr/m/n/10 The re-main-ing of the pa-per is or-gan-ized as fol-lows. In S
-ec-tion[]2[], the Translator-
- []
-
-<figures/dataflow.png, id=52, 580.41844pt x 342.5297pt>
+<figures/dataflow.png, id=31, 580.41844pt x 342.5297pt>
 File: figures/dataflow.png Graphic file (type png)
 
 <use figures/dataflow.png>
-Package pdftex.def Info: figures/dataflow.png used on input line 7.
+Package pdftex.def Info: figures/dataflow.png used on input line 15.
 (pdftex.def)             Requested size: 341.43306pt x 201.49493pt.
- [2]) (./methods.tex [3 <./figures/dataflow.png>]
-[4] [5]) (./evaluation.tex [6] [7]
-<figures/l2rdiagram.png, id=167, 478.03593pt x 358.33875pt>
+ [2]) (./methods.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3 <./figures/dataflow.png>] [4] [5]) (./evaluation.tex [6] [7] [8]
+<figures/l2rdiagram.png, id=177, 478.03593pt x 358.33875pt>
 File: figures/l2rdiagram.png Graphic file (type png)
 
 <use figures/l2rdiagram.png>
 Package pdftex.def Info: figures/l2rdiagram.png used on input line 74.
 (pdftex.def)             Requested size: 239.01738pt x 179.16893pt.
-) (./conclusion.tex [8] [9 <./figures/l2rdiagram.png>]) (./paper.bbl [10])
+) (./conclusion.tex [9] [10 <./figures/l2rdiagram.png>]) (./paper.bbl [11])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 45.
- [11]
+ [12]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 45.
  (./paper.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 45.
@@ -878,17 +875,17 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 45.
  ) 
 Here is how much of TeX's memory you used:
- 7843 strings out of 493633
- 110020 string characters out of 3143335
- 221672 words of memory out of 3000000
- 10912 multiletter control sequences out of 15000+200000
+ 7850 strings out of 493633
+ 110127 string characters out of 3143335
+ 221710 words of memory out of 3000000
+ 10915 multiletter control sequences out of 15000+200000
  51242 words of font info for 41 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 43i,14n,35p,1522b,478s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
-texlive/2011/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/20
-11/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2011/texmf-d
-ist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2011/texmf-dist/fonts/
+ 43i,14n,35p,1605b,474s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/lo
+cal/texlive/2011/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texliv
+e/2011/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2011/tex
+mf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2011/texmf-dist/fonts/
 enc/dvips/lm/lm-rm.enc}</usr/local/texlive/2011/texmf-dist/fonts/type1/public/l
 m/lmbx10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/lm/lmbx12.p
 fb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></usr/lo
@@ -901,10 +898,10 @@ blic/lm/lmr10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/lm/lmr
 local/texlive/2011/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texl
 ive/2011/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2011/t
 exmf-dist/fonts/type1/public/lm/lmtt9.pfb>
-Output written on paper.pdf (11 pages, 308521 bytes).
+Output written on paper.pdf (12 pages, 312969 bytes).
 PDF statistics:
- 256 PDF objects out of 1000 (max. 8388607)
- 192 compressed objects within 2 object streams
- 49 named destinations out of 1000 (max. 500000)
+ 266 PDF objects out of 1000 (max. 8388607)
+ 200 compressed objects within 2 object streams
+ 53 named destinations out of 1000 (max. 500000)
  19 words of extra memory for PDF output out of 10000 (max. 10000000)
 

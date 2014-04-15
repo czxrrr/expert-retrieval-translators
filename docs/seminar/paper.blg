@@ -7,45 +7,45 @@ Warning--there's a number but no series in er
 Warning--missing publisher in er
 Warning--empty booktitle in l2r-lambdarank
 Warning--empty booktitle in l2r-lambdamart
-You've used 20 entries,
+You've used 21 entries,
             2785 wiz_defined-function locations,
-            688 strings with 7879 characters,
-and the built_in function-call counts, 10172 in all, are:
-= -- 771
-> -- 410
+            693 strings with 8008 characters,
+and the built_in function-call counts, 10547 in all, are:
+= -- 798
+> -- 422
 < -- 7
-+ -- 172
-- -- 148
-* -- 651
-:= -- 1380
-add.period$ -- 25
-call.type$ -- 20
-change.case$ -- 144
++ -- 177
+- -- 152
+* -- 671
+:= -- 1432
+add.period$ -- 26
+call.type$ -- 21
+change.case$ -- 148
 chr.to.int$ -- 0
-cite$ -- 24
-duplicate$ -- 906
-empty$ -- 894
-format.name$ -- 166
-if$ -- 2140
+cite$ -- 25
+duplicate$ -- 941
+empty$ -- 935
+format.name$ -- 171
+if$ -- 2222
 int.to.chr$ -- 0
-int.to.str$ -- 20
-missing$ -- 208
-newline$ -- 65
-num.names$ -- 40
-pop$ -- 425
+int.to.str$ -- 21
+missing$ -- 216
+newline$ -- 68
+num.names$ -- 42
+pop$ -- 442
 preamble$ -- 1
-purify$ -- 114
+purify$ -- 118
 quote$ -- 0
-skip$ -- 221
+skip$ -- 230
 stack$ -- 0
-substring$ -- 402
-swap$ -- 442
+substring$ -- 415
+swap$ -- 455
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 76
+type$ -- 78
 warning$ -- 4
-while$ -- 72
-width$ -- 22
-write$ -- 195
+while$ -- 75
+width$ -- 23
+write$ -- 204
 (There were 4 warnings)

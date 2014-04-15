@@ -1,7 +1,14 @@
 \section{Methods and Related Work}
 \label{sec:methods}
-In this section, we study different methods and algorithms regarding to Aggregation Functions and Learning to Rank.
+With the development of information retrieval (IR) techniques, many research efforts go beyond traditional document retrieval and address high-level IR such as entity retrieval and expertise retrieval \cite{er-sparse}. The goal of expertise retrieval is to link humans to expertise areas, and vice versa. In other words, the task of expertise retrieval is to identify a set of persons with relevant expertise for the given query \cite{er,er-community-aware}.
+The launch of the Expert Finding task at TREC has generated a lot of interest in expertise retrieval, following by rapid progress being made in terms of modeling, algorithms, and evaluation aspects \cite{trec2005,er-community-aware}.
 
+\cite{trec2005} propose two principal approaches  in the expertise retrieval area based on probabilistic language modeling techniques. They were formalized as so-called \textit{candidate models} and \textit{document models}. The candidate-based approach, also referred to as profile-based method, builds a textual representation of candidate experts and then ranks them based on the query. The document models first find documents relevant to the topic and then locate the experts associated with these documents \cite{er}.
+
+Ranking techniques are an essential part of each IR framework. In recent years, Learning to Rank (L2R) has been studied extensively especially for document retrieval. It refers to machine learning techniques for training the model in a ranking task \cite{er}. In essence, expert search is a ranking problem and thus the existing L2R techniques can be naturally applied to it \cite{l2r-intro}.
+
+As well as ranking techniques, aggregation functions have a significant effect on the performance of expert retrieval systems. Aggregate tasks are those where documents' similarities are not
+the final outcome, but instead an intermediary component. In expert search, a ranking of candidate persons with relevant expertise to a query is generated after aggregation of their related documents \cite{agg-learning}.
 \subsection{Aggregation Functions}
 The aggregation function has a significant impact on the performance of Expert Retrieval system. As a usual scenario in expert retrieval systems, first each document related to an expert is scored and ranked regarding to query. Then, the top $N$ document scores associated with a candidate expert are aggregated in order to rank the experts. 
 
