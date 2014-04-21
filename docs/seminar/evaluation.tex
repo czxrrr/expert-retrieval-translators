@@ -9,9 +9,28 @@ In order to evaluate aggregation functions results, we use the assessment of the
 
 Similar ~\cite{agg-gp2}, we compare three aggregation algorithms: $GP2$, $Top5$ and $Top1$. $GP2$ is the state of the art, while $Top1$ and $Top5$ are two common forms of $TopN$ aggregation algorithm which refers to algorithm that summarizes the $N$ top documents. Furthermore, $Top1$ can be interpreted as the maximum similarity score, and follows the intuition that it is sufficient for a translator to have had only one highly similar translation job before in order to do a good job on the new task.
 
-As input data we have $181$ translation orders collected from the live system. For each of them, we know the translator who performed the translation (including all her previously translated documents), the text of the document to be translated, and the score given by the proof-reader. Because this is historical data, evaluating the aggregation method cannot be done by giving the same translation task to different translators. However, by calculating the value of each mentioned algorithm on all finished translations, we achieve three lists of translations each annotated with an additional aggregation value field. Then, in order to compare the algorithms, we test the correlation of each list with the list of translations annotated with proof-readers' assessments. Again, the assumption being that if we rank translation jobs by aggregation scores, the top elements would have high proof-reader scores, while the bottom elements lower scores. 
+As input data we have $181$ translation orders collected from the live system. For each of them, we know the translator who performed the translation (including all her previously translated documents), the text of the document to be translated, and the score given by the proof-reader. Because this is historical data, evaluating the aggregation method cannot be done by giving the same translation task to different translators. However, by calculating the value of each mentioned algorithm on all finished translations, we achieve three lists of translations each annotated with an additional aggregation value field. Then, in order to compare the algorithms, we test the correlation of each list with the list of translations annotated with proof-readers' assessments. Again, the assumption being that if we rank translation jobs by aggregation scores, the top elements would have high proof-reader scores, while the bottom elements lower scores. The distribution of data between the values of each aggregation function and the proof-reader's assessments is shown in Figure~\ref{fig:aggregationplot}.
 
-%mihai: put a plot here. On the X-axis the proof-reader scores and on the Y-axis the aggregation scores.
+\begin{figure}
+\centering
+\begin{subfigure}{.3\textwidth}
+  \centering
+	\includegraphics[width=0.8\textwidth]{figures/aggregation_plots_gp2.png}
+	\caption{GP2}
+\end{subfigure}%
+\begin{subfigure}{.3\textwidth}
+  \centering
+	\includegraphics[width=0.8\textwidth]{figures/aggregation_plots_top5.png}
+	\caption{TOP5}
+\end{subfigure}%
+\begin{subfigure}{.3\textwidth}
+  \centering
+	\includegraphics[width=0.8\textwidth]{figures/aggregation_plots_top1.png}
+	\caption{TOP1}
+\end{subfigure}
+\caption{Data distribution of aggregation values against proof-readers' assessments. Axes X shows the assessments of proof-readers. axes Y represents the values of the corresponding aggregation function}
+\label{fig:aggregationplot}
+\end{figure}
 
 In order to calculate the correlation value, we applied Spearman Rank Order and Kendall Rank Correlation as two common methods. Table~\ref{table:correlation} shows the results of Spearman correlation coefficient ($r_s$) and Kendall's tau coefficient ($\tau$) using the $181$ records of purchased orders. In addition, it represents the Significance Test of both methods. For Spearman's test, p-values are computed using algorithm AS 89~\cite{as89}.
 
@@ -20,8 +39,7 @@ The coefficient value of Spearman is slightly higher than Kendall's. The outcome
 Comparing the algorithms, $GP2$ outperforms the others in both correlation tests. In comparison to $Top1$, $Top5$ has slightly better performance. The results are also nearly the same when comparing based on language-pairs.
 
 \begin{table}
-\begin{center}{
-\caption{Correlation Test Between Algorithms and Proof-readers' Feedbacks as well as P-Value of Significance of Correlation Test}
+\centering
 \begin{tabular}{c c|c|c|c|}
 \cline{3-5} & & Top1 & Top5 & GP2  \\
 \hline \multicolumn{1}{ |c| }{\multirow{2}{*}{$r_s$}} & Correlation Test & 0.052 & 0.089 & 0.145\\
@@ -30,9 +48,8 @@ Comparing the algorithms, $GP2$ outperforms the others in both correlation tests
 \cline{2-5} \multicolumn{1}{ |c| }{} & p-Value & 0.5157 & 0.2562 & 0.05263\\
 \hline
 \end{tabular}
-}
+\caption{Correlation Test Between Algorithms and Proof-readers' Feedbacks as well as P-Value of Significance of Correlation Test}
 \label{table:correlation}
-\end{center}
 \end{table}
 
 \subsection{Learning To Rank}
@@ -51,8 +68,7 @@ In addition to comparing the methods, features comparison can be an interesting 
 As it is shown, price and delivery time seem to be the most effective features while the number of cooperation times has the lowest importance. Surprisingly, proficiency plays a small role in the ranking of the translators. It can be because of the proposed business plan of the platform to the clients which guarantees an acceptable quality of translation. In addition, we expect that by applying the methods on much more amount of data, the proficiency feature gains more importance.
 
 \begin{table}
-\begin{center}{
-\caption{Results of applying Learning to Rank methods based on NDCG and ERR evaluation measures}
+\centering
 \begin{tabular}{|c|c|c|c|c|}
 \hline \multirow{2}{*}{Method} & \multicolumn{2}{ c| }{NDCG@3} & \multicolumn{2}{ c| }{ERR@3}  \\
 \cline{2-5} & Result & Random & Result & Random \\
@@ -65,23 +81,20 @@ As it is shown, price and delivery time seem to be the most effective features w
 \hline Random Ranker & 0.832 & 0.832 & 0.375 & 0.378 \\
 \hline
 \end{tabular}
-}
+\caption{Results of applying Learning to Rank methods based on NDCG and ERR evaluation measures}
 \label{table:l2rresult}
-\end{center}
 \end{table}
 
 
 \begin{figure}
-\begin{center}
-\includegraphics[scale=0.5]{figures/l2rdiagram.png}
-\caption{Learning to Rank Results
-\label{fig:l2rdiagram}}
-\end{center}
+\centering
+\includegraphics[scale=0.6]{figures/l2rdiagram.png}
+\caption{Learning to Rank Results}
+\label{fig:l2rdiagram}
 \end{figure}
 
 \begin{table}
-\begin{center}{
-\caption{Coefficient value of features in Linear Regression model}
+\centering
 \begin{tabular}{|c|c|}
 \hline Feature & Value  \\
 \hline Price & 2.002 \\
@@ -90,7 +103,6 @@ As it is shown, price and delivery time seem to be the most effective features w
 \hline Number of Cooperation Times & -0.313 \\
 \hline
 \end{tabular}
-}
+\caption{Coefficient value of features in Linear Regression model}
 \label{table:l2rcoefficient}
-\end{center}
 \end{table}

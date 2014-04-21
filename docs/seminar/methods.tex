@@ -49,7 +49,7 @@ In the pointwise approach, the ranking problem is transformed to classification,
 The pairwise approach transforms the ranking problem into pairwise classification or regression. In fact, it cares about the relative order between two documents. Similar to the pointwise approach, the pairwise method also ignores the group structure of ranking~\cite{l2r-intro}. Here is a brief explanation of some pairwise algorithms:
 
 \begin{itemize}
-\item \textit{RankNet~\cite{l2r-ranknet}: Widely applied by commercial search engines, it uses gradient descent method and neural network to model the underlying ranking function.
+\item \textit{RankNet}~\cite{l2r-ranknet}: Widely applied by commercial search engines, it uses gradient descent method and neural network to model the underlying ranking function.
 \item \textit{RankBoost}~\cite{l2r-rankboost}: It adopts AdaBoost algorithm for the classification over the object pairs.
 \item \textit{LambdaRank}~\cite{l2r-lambdarank}: It considers the evaluation measures to set its pair weight. In particular, the evaluation measures (which are position based) are directly used to define the gradient with respect to each document pair in the training process.
 \item \textit{LambdaMART}~\cite{l2r-lambdamart}: It combines the strengths of boosted tree classification and LambdaRank.

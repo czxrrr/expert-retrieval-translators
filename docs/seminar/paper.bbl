@@ -16,6 +16,10 @@ Best, D.J., Roberts, D.E.: Algorithm as 89: The upper tail probabilities of
   spearman's rho. Journal of the Royal Statistical Society. Series C (Applied
   Statistics)  24(3) (1975)
 
+\bibitem{l2r-clickmodel2}
+Büttcher, S., Clarke, C.L.A., Yeung, P.C.K., et~al.: Reliable information
+  retrieval evaluation with incomplete and biased judgements (2007)
+
 \bibitem{l2r-lambdarank}
 Burges, C., C.J., Ragno, Robert, Le, V., Q.: Learning to rank with nonsmooth
   cost functions. MIT Press (2006)
@@ -25,10 +29,6 @@ Burges, C., Shaked, T., Renshaw, E., Lazier, A., Deeds, M., Hamilton, N.,
   Hullender, G.: Learning to rank using gradient descent. In: ICML '05:
   Proceedings of the 22nd international conference on Machine learning. ACM
   Press, New York, NY, USA (2005)
-
-\bibitem{l2r-clickmodel2}
-Büttcher, S., Clarke, C.L.A., Yeung, P.C.K., et~al.: Reliable information
-  retrieval evaluation with incomplete and biased judgements (2007)
 
 \bibitem{trec2005}
 Cao, Y., Liu, J., Bao, S., Li, H.: Research on expert search at enterprise

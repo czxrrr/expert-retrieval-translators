@@ -4,12 +4,10 @@ top5 <- as.numeric(unlist(d[3]))
 top1 <- as.numeric(unlist(d[2]))
 feedback <- as.numeric(unlist(d[4]))
 
-cor.test(feedback, gp2, method="spearman")
-cor.test(feedback, gp2, method="kendall")
+gp2_normalized = (gp2-min(gp2))/(max(gp2)-min(gp2))
+top5_normalized = (top5-min(top5))/(max(top5)-min(top5))
+top1_normalized = (top1-min(top1))/(max(top1)-min(top1))
 
-cor.test(feedback, top5, method="spearman")
-cor.test(feedback, top5, method="kendall")
 
-cor.test(feedback, top1, method="spearman")
-cor.test(feedback, top1, method="kendall")
+plot(feedback, gp2_normalized, xlab="", ylab="", pch=19)
 
