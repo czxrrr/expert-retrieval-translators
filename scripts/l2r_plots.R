@@ -1,24 +1,25 @@
 d <- read.csv("C:/Users/Navid/Documents/GitHub/expert-retrieval-translators/data/l2r_results.csv", header=TRUE, sep = ",")
 algorithms <- unlist(d[1])
-evaluation_method<- unlist(d[2])
+methods<- unlist(d[2])
 evaluation<- as.numeric(unlist(d[3]))
-evaluation_random<- as.numeric(unlist(d[4]))
+cimin<- as.numeric(unlist(d[4]))
+cimax<- as.numeric(unlist(d[5]))
+random<- as.numeric(unlist(d[6]))
 
-cols <- c("algorithms"="#f04546","evaluation_method"="#3591d1","evaluation"="#62c76b","evaluation_random"="#62c76b")
 
-df <- data.frame(algorithms, evaluation_method, evaluation, evaluation_random)
+df <- data.frame(algorithms, methods, evaluation, cimin, cimax, random)
 
 library(ggplot2)
 
-ggplot(df, aes(x=reorder(algorithms, -evaluation), fill=evaluation_method)) +
+ggplot(df, aes(x=reorder(algorithms, -evaluation), fill=methods)) +
 geom_bar(aes(y=evaluation),
 	position=position_dodge(), 
 	stat="identity") +
-geom_line(aes(y=evaluation_random, 
-	group=evaluation_method),
+geom_line(aes(y=random, 
+	group=methods),
 	colour="darkgreen",
 	lwd = 1)+
-geom_errorbar(aes(ymin=evaluation-.01, ymax=evaluation+.01), 
+geom_errorbar(aes(ymin=cimin, ymax=cimax), 
 	size=1,
 	width=.4,
 	position=position_dodge(.9))+
