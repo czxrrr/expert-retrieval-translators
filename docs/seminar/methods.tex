@@ -33,14 +33,14 @@ Learning to rank refers to machine learning techniques for training a model in a
 
 In the learning to rank approach, the ranking problem is transformed to classification, regression and ordinal classification, and existing methods and techniques for solving machine learning problems are applied. As Hang~\cite{l2r-intro} points out, the relation between learning to rank and ordinal classification is that, in ranking, one cares more about accurate ordering of objects, while in ordinal classification, one cares more about accurate ordered-categorization of objects.
 
-One primitive step in accumulating data required for learning to rank, is relevance judgments, normally done by human annotators. Lie~\cite{l2r-book} presents the three main strategies in learning to rank:
+The first step in accumulating data required for learning to rank, is relevance judgments, normally done by human annotators. Lie~\cite{l2r-book} presents the three main strategies in learning to rank:
 \begin{itemize}
 \item \textit{Relevance degree}: In this method, the annotator specifies whether an object is relevant or not to the query. It can be either in binary judgment or by specifying the degree of relevance (e.g., Perfect, Excellent, Good, Fair, or Bad).
 \item \textit{Pairwise preference}: The annotator compares a pair of objects in order to specify which one is more relevant with regards to a query.
 \item \textit{Total order}: The annotator specifies the total order of all objects with respect to a query by rating each object.
 \end{itemize}
 
-Among the three mentioned kinds of judgments, the first one is the most popularly used judgment since is the easiest to obtain. While the third one is more accurate but laborious for human annotators.
+Among the three mentioned kinds of judgments, the first one is the most popularly used judgment since is the easiest to obtain, while the third one is more accurate but laborious for human annotators. In our case, we have used the total order method because our ranked lists consisted of only 3 translators.
 
 The learning to rank techniques are categorized in three main groups: \textit{Pointwise}, \textit{Pairwise} and \textit{Listwise}.
 
@@ -66,6 +66,6 @@ Lie~\cite{l2r-book} compares the algorithms by applying on different data-sets. 
 
 \subsection{Evaluation}
 
-A critical point in all kinds of information retrieval systems is the evaluation of results. The evaluation on the performance of a ranking model is carried out by comparison between the ranking lists output of the model and the ranking lists given as the ground truth. Some common IR evaluation methods like Mean average precision (MAP), [Normalized] Discounted Cumulative Gain ([N]DCG), Mean Reciprocal Rank (MRR) are also widely user in leaning to rank evaluation. Among the mentioned metrics, DCG/NDCG is the only one used for graded relevance.
+A critical point in all information retrieval systems is the evaluation of results. The evaluation on the performance of a ranking model is carried out by comparison between the ranking lists output of the model and the ranking lists given as the ground truth. Some common IR evaluation methods like Mean average precision (MAP), [Normalized] Discounted Cumulative Gain ([N]DCG), Mean Reciprocal Rank (MRR) are also widely user in leaning to rank evaluation. Among the mentioned metrics, DCG/NDCG is the only one used for graded relevance.
 
 Recently, Chapelle and Zhang~\cite{l2r-err} have proposed Expected Reciprocal Rank (ERR) which claims to model user's satisfaction with search results better than the DCG metric. Their work addresses the underlying independence assumption of DCG that a document in a given position has always the same gain and discount independently of the documents shown above it. It asserts that based on research on modeling user click behavior~\cite{l2r-clickmodel1,l2r-clickmodel2}, the likelihood a user examines the document at rank $i$ is dependent on how satisfied the user was with previously observed documents in the ranked list. In other words, it assumes that a user is more likely to stop browsing if they have already seen one or more highly relevant documents. Introducing the ERR formula, Chapelle and Zhang claim that results reflect real user browsing behavior better and quantifies user satisfaction more accurately than DCG.
