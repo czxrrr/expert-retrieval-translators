@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.18)  28 APR 2014 22:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.18)  29 APR 2014 09:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -886,15 +886,17 @@ File: figures/dataflow.png Graphic file (type png)
 <use figures/dataflow.png>
 Package pdftex.def Info: figures/dataflow.png used on input line 15.
 (pdftex.def)             Requested size: 341.43306pt x 158.53554pt.
- [2]) (./methods.tex [3 <./figures/dataflow.png>]
-[4] [5] [6]) (./evaluation.tex [7]
+ [2]) (./methods.tex
+Underfull \vbox (badness 4132) has occurred while \output is active []
+
+ [3 <./figures/dataflow.png>] [4] [5] [6]) (./evaluation.tex [7]
 <figures/aggregation_plots_gp2.png, id=166, 361.35pt x 322.20375pt>
 File: figures/aggregation_plots_gp2.png Graphic file (type png)
 
 <use figures/aggregation_plots_gp2.png>
 Package pdftex.def Info: figures/aggregation_plots_gp2.png used on input line 1
 8.
-(pdftex.def)             Requested size: 83.31079pt x 74.28229pt.
+(pdftex.def)             Requested size: 103.09729pt x 91.92734pt.
 
 <figures/aggregation_plots_top5.png, id=167, 360.59718pt x 327.47343pt>
 File: figures/aggregation_plots_top5.png Graphic file (type png)
@@ -902,7 +904,7 @@ File: figures/aggregation_plots_top5.png Graphic file (type png)
 <use figures/aggregation_plots_top5.png>
 Package pdftex.def Info: figures/aggregation_plots_top5.png used on input line 
 23.
-(pdftex.def)             Requested size: 83.31079pt x 75.65709pt.
+(pdftex.def)             Requested size: 103.09729pt x 93.6257pt.
 
 <figures/aggregation_plots_top1.png, id=168, 358.33875pt x 319.94531pt>
 File: figures/aggregation_plots_top1.png Graphic file (type png)
@@ -910,9 +912,9 @@ File: figures/aggregation_plots_top1.png Graphic file (type png)
 <use figures/aggregation_plots_top1.png>
 Package pdftex.def Info: figures/aggregation_plots_top1.png used on input line 
 28.
-(pdftex.def)             Requested size: 83.31079pt x 74.38162pt.
+(pdftex.def)             Requested size: 103.09729pt x 92.04945pt.
 
-Underfull \vbox (badness 3148) has occurred while \output is active []
+Underfull \vbox (badness 2717) has occurred while \output is active []
 
  [8 <./figures/aggregation_plots_gp2.png> <./figures/aggregation_plots_top5.png
 > <./figures/aggregation_plots_top1.png>] [9]
@@ -920,7 +922,7 @@ Underfull \vbox (badness 3148) has occurred while \output is active []
 File: figures/l2rdiagram.png Graphic file (type png)
 
 <use figures/l2rdiagram.png>
-Package pdftex.def Info: figures/l2rdiagram.png used on input line 91.
+Package pdftex.def Info: figures/l2rdiagram.png used on input line 95.
 (pdftex.def)             Requested size: 225.84547pt x 219.07011pt.
 ) (./conclusion.tex [10]) (./paper.bbl
 Underfull \vbox (badness 1264) has occurred while \output is active []
@@ -939,7 +941,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 44.
 Here is how much of TeX's memory you used:
  9229 strings out of 493315
  134882 string characters out of 6137904
- 248509 words of memory out of 5000000
+ 249509 words of memory out of 5000000
  12420 multiletter control sequences out of 15000+600000
  51242 words of font info for 41 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -960,7 +962,7 @@ blic/lm/lmr10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmr
 local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texl
 ive/2013/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2013/t
 exmf-dist/fonts/type1/public/lm/lmtt9.pfb>
-Output written on paper.pdf (13 pages, 330666 bytes).
+Output written on paper.pdf (13 pages, 330735 bytes).
 PDF statistics:
  285 PDF objects out of 1000 (max. 8388607)
  215 compressed objects within 3 object streams

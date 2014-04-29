@@ -15,21 +15,23 @@ As input data we have $181$ translation orders collected from the live system. F
 \centering
 \begin{subfigure}{.3\textwidth}
   \centering
-	\includegraphics[width=0.8\textwidth]{figures/aggregation_plots_gp2.png}
+	\includegraphics[width=0.99\textwidth]{figures/aggregation_plots_gp2.png}
 	\caption{GP2}
 \end{subfigure}%
 \begin{subfigure}{.3\textwidth}
   \centering
-	\includegraphics[width=0.8\textwidth]{figures/aggregation_plots_top5.png}
+	\includegraphics[width=0.99\textwidth]{figures/aggregation_plots_top5.png}
 	\caption{TOP5}
 \end{subfigure}%
 \begin{subfigure}{.3\textwidth}
   \centering
-	\includegraphics[width=0.8\textwidth]{figures/aggregation_plots_top1.png}
+	\includegraphics[width=0.99\textwidth]{figures/aggregation_plots_top1.png}
 	\caption{TOP1}
 \end{subfigure}
+\vspace{-0.3cm}
 \caption{Data distribution of aggregation values against proof-readers' assessments. Axes X shows the assessments of proof-readers. axes Y represents the values of the corresponding aggregation function}
 \label{fig:aggregationplot}
+\vspace{-0.3cm}
 \end{figure}
 
 In order to calculate the correlation value, we applied Spearman Rank Order and Kendall Rank Correlation as two common methods. Table~\ref{table:correlation} shows the results of Spearman correlation coefficient ($r_s$) and Kendall's tau coefficient ($\tau$) using the $181$ records of purchased orders. In addition, it represents the Significance Test of both methods. For Spearman's test, p-values are computed using algorithm AS 89~\cite{as89}.
@@ -39,6 +41,7 @@ The coefficient value of Spearman is slightly higher than Kendall's. The outcome
 Comparing the algorithms, $GP2$ outperforms the others in both correlation tests. In comparison to $Top1$, $Top5$ has slightly better performance. The results are also nearly the same when comparing based on language-pairs.
 
 \begin{table}
+\vspace{-0.3cm}
 \centering
 \begin{tabular}{c c|c|c|c|}
 \cline{3-5} & & Top1 & Top5 & GP2  \\
@@ -68,6 +71,7 @@ In addition to comparing the methods, features comparison can be an interesting 
 As it is shown, price and delivery time seem to be the most effective features while the number of cooperation times has the lowest importance. Surprisingly, proficiency plays a small role in the ranking of the translators. It can be because of the proposed business plan of the platform to the clients which guarantees an acceptable quality of translation. In addition, we expect that by applying the methods on much more amount of data, the proficiency feature gains more importance.
 
 \begin{table}
+\vspace{-0.3cm}
 \centering
 \begin{tabular}{|c|c|c|c|c|}
 \hline \multirow{2}{*}{Method} & \multicolumn{2}{ c| }{NDCG@3} & \multicolumn{2}{ c| }{ERR@3}  \\
@@ -94,6 +98,7 @@ As it is shown, price and delivery time seem to be the most effective features w
 \end{figure}
 
 \begin{table}
+\vspace{-0.3cm}
 \centering
 \begin{tabular}{|c|c|}
 \hline Feature & Value  \\
