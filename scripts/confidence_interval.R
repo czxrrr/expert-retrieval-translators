@@ -1,5 +1,5 @@
 d <- read.csv("C:/Users/Navid/Documents/GitHub/expert-retrieval-translators/data/l2r_cv_results.csv", header=FALSE, sep = ",")
-i=12
+i=14
 cv1<- as.numeric(d[i,3])
 cv2<- as.numeric(d[i,4])
 cv3<- as.numeric(d[i,5])

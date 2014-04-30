@@ -14,10 +14,11 @@ library(ggplot2)
 ggplot(df, aes(x=reorder(algorithms, -evaluation), fill=methods)) +
 geom_bar(aes(y=evaluation),
 	position=position_dodge(), 
-	stat="identity") +
+	stat="identity",
+	colour="black") +
 geom_line(aes(y=random, 
 	group=methods),
-	colour="darkgreen",
+	colour="black",
 	lwd = 1)+
 geom_errorbar(aes(ymin=cimin, ymax=cimax), 
 	size=1,
@@ -29,5 +30,6 @@ ggtitle("") +
 theme_bw()+
 theme(legend.position="bottom",
 	axis.text.x = element_text(angle = 60, hjust = 1))+
-scale_fill_discrete("")+
-coord_cartesian(ylim = c(.3, 1))
+coord_cartesian(ylim = c(.3, 1))+ 
+scale_fill_manual(values=c("white", "darkgray"))+
+opts(legend.title=theme_blank())
