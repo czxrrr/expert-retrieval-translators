@@ -5,12 +5,13 @@
 	Title = {{Search Based Applications}},
 	Year = {2011}}
 
-@inbook{er,
+@article{er,
 author = {Balog and Krisztian and Yi Fang and Maarten de Rijke and Pavel Serdyukov and Luo Si.},
-title = {Expertise Retrieval - Foundations and Trends in Information Retrieval 6},
+title = {Expertise Retrieval},
+journal={Foundations and Trends in Information Retrieval},
+volume={6},
 year = {2012},
 number = {2--3},
-pages = {127--256}
 }
 
 @article{er-community-aware,
@@ -20,24 +21,24 @@ journal = "Systems Man and Cybernetics Part B: Cybernetics IEEE Transactions",
 year = {2012},
 }
 
-@article{trec2005,
+@inproceedings{trec2005,
 author = {Y. Cao and J. Liu and S. Bao and H. Li},
 title = {Research on expert search at enterprise track of TREC 2005},
-journal = {TREC},
+booktitle = {Proc. of TREC},
 year = {2005}
 }
 
-@article{er-sparse,
+@inproceedings{er-sparse,
 author = {K. Balog and T. Bogers and L. Azzopardi and M. de Rijke and A. van den Bosch},
 title = {Broad expertise retrieval in sparse data environments},
-journal = {SIGIR},
+booktitle = {Proc. of SIGIR},
 year = {2007}
 }
 
 @article{l2r-intro,
 author = {L. I. Hang},
 title = {A short introduction to learning to Rank},
-journal = {IEICE TRANSACTIONS on Information and Systems},
+journal = {{Transactions on Information and Systems}},
 year = {2011}
 }
 
@@ -48,17 +49,17 @@ journal = {Advances in Information Retrieval. Springer Berlin Heidelberg},
 year = {2011}
 }
 
-@article{agg-gp2,
-author = {Cummins and Ronan and Mounia Lalmas and Colm O'Riordan},
+@inproceedings{agg-gp2,
+author = {Ronan Cummins  and Mounia Lalmas and Colm O'Riordan},
 title = {Learning Aggregation Functions for Expert Search},
-journal = {ECAI},
+booktitle = {Proc. of ECAI},
 year = {2010}
 }
 
-@article{agg-vote,
-author = {Macdonald and Craig and Iadh Ounis},
+@inproceedings{agg-vote,
+author = {Craig Macdonald and Iadh Ounis},
 title = {Voting for candidates: adapting data fusion techniques for an expert search task},
-journal = {the 15th ACM international conference on Information and knowledge management},
+booktitle = {Proc. of CIKM},
 year = {2006}
 }
 
@@ -74,24 +75,19 @@ OPTnumber = {3}
 @INPROCEEDINGS{l2r-err,
 author = {Olivier Chapelle and Ya Zhang},
 title = {Expected Reciprocal Rank for Graded Relevance},
-booktitle = {CIKM'09, NOVEMBER 2–6, 2009, HONG KONG, CHINA.},
+booktitle = {Proc. of CIKM},
 year = {2009},
-publisher = {ACM}
 }
 
 @inproceedings{l2r-clickmodel1,
-  address = {New York, NY, USA},
   author = {Craswell, Nick and Zoeter, Onno and Taylor, Michael and Ramsey, Bill},
-  booktitle = {WSDM '08: Proceedings of the international conference on Web search and web data mining},
-  isbn = {9781595939279},
-  keywords = {clicks, search},
-  publisher = {ACM},
+  booktitle = {Proc. of WSDM},
   title = {An experimental comparison of click position-bias models},
   year = 2008
 }
 
 @MISC{l2r-clickmodel2,
-    author = {Stefan Büttcher and Charles L. A. Clarke and Peter C. K. Yeung and et al.},
+    author = {Stefan B{\"u}ttcher and Charles L. A. Clarke and Peter C. K. Yeung and et al.},
     title = { Reliable Information Retrieval Evaluation with Incomplete and Biased Judgements},
     year = {2007}
 }
@@ -105,8 +101,7 @@ publisher = {ACM}
 @inproceedings{l2r-ranknet,
   address = {New York, NY, USA},
   author = {Burges, Chris and Shaked, Tal and Renshaw, Erin and Lazier, Ari and Deeds, Matt and Hamilton, Nicole and Hullender, Greg},
-  booktitle = {ICML '05: Proceedings of the 22nd international conference on Machine learning},
-  publisher = {ACM Press},
+  booktitle = {Proc. of ICML},
   title = {Learning to rank using gradient descent},
   year = 2005
 }
@@ -128,66 +123,32 @@ publisher = {ACM}
 @inproceedings{l2r-adarank,
  author = {Xu, Jun and Li, Hang},
  title = {AdaRank: A Boosting Algorithm for Information Retrieval},
- booktitle = {Proceedings of the 30th Annual International ACM SIGIR Conference on Research and Development in Information Retrieval},
- series = {SIGIR '07},
+ booktitle = {Procs of SIGIR},
  year = {2007},
- isbn = {978-1-59593-597-7},
- location = {Amsterdam, The Netherlands},
- pages = {391--398},
  numpages = {8},
- url = {http://doi.acm.org/10.1145/1277741.1277809},
- doi = {10.1145/1277741.1277809},
- acmid = {1277809},
- publisher = {ACM},
- address = {New York, NY, USA},
  keywords = {boosting, information retrieval, learning to rank},
 }
 
 @inproceedings{l2r-listnet,
  author = {Cao, Zhe and Qin, Tao and Liu, Tie-Yan and Tsai, Ming-Feng and Li, Hang},
  title = {Learning to Rank: From Pairwise Approach to Listwise Approach},
- booktitle = {Proceedings of the 24th International Conference on Machine Learning},
- series = {ICML '07},
+ booktitle = {Procs of ICML},
  year = {2007},
- isbn = {978-1-59593-793-3},
- location = {Corvalis, Oregon},
- pages = {129--136},
- numpages = {8},
- url = {http://doi.acm.org/10.1145/1273496.1273513},
- doi = {10.1145/1273496.1273513},
- acmid = {1273513},
- publisher = {ACM},
- address = {New York, NY, USA},
 }
 
 @article{l2r-when,
  author = {Macdonald, Craig and Santos, Rodrygo L. and Ounis, Iadh},
  title = {The Whens and Hows of Learning to Rank for Web Search},
  journal = {Inf. Retr.},
- issue_date = {October   2013},
  volume = {16},
  number = {5},
- month = oct,
  year = {2013},
- issn = {1386-4564},
- pages = {584--628},
- numpages = {45},
- url = {http://dx.doi.org/10.1007/s10791-012-9209-9},
- doi = {10.1007/s10791-012-9209-9},
- acmid = {2559126},
  publisher = {Kluwer Academic Publishers},
- address = {Hingham, MA, USA},
- keywords = {Document representations, Evaluation, Learning to rank, Loss function, Sample size, Web search}
 } 
 
 @article{as89,
   author = {Best, D. J. and Roberts, D. E.},
-  copyright = {Copyright © 1975 Royal Statistical Society},
-  issn = {00359254},
   journal = {Journal of the Royal Statistical Society. Series C (Applied Statistics)},
-  jstor_articletype = {research-article},
-  jstor_formatteddate = {1975},
-  keywords = {as89 correlation significance spearman testing},
   number = 3,
   publisher = {Wiley for the Royal Statistical Society},
   title = {Algorithm AS 89: The Upper Tail Probabilities of Spearman's Rho},

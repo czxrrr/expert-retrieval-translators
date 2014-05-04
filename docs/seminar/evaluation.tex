@@ -29,7 +29,7 @@ As input data we have $181$ translation orders collected from the live system. F
 	\caption{TOP1}
 \end{subfigure}
 \vspace{-0.3cm}
-\caption{Data distribution of aggregation values against proof-readers' assessments. Axes X shows the assessments of proof-readers. axes Y represents the values of the corresponding aggregation function}
+\caption{Data distribution of aggregation values against proof-readers' assessments. The x-axis shows the assessments of proof-readers, while the y-axis represents the values of the corresponding aggregation function}
 \label{fig:aggregationplot}
 \vspace{-0.3cm}
 \end{figure}
@@ -42,6 +42,7 @@ Comparing the algorithms, $GP2$ outperforms the others in both correlation tests
 
 \begin{table}
 \vspace{-0.3cm}
+\caption{Correlation Test Between Algorithms and Proof-readers' Feedbacks as well as P-Value of Significance of Correlation Test}
 \centering
 \begin{tabular}{c c|c|c|c|}
 \cline{3-5} & & Top1 & Top5 & GP2  \\
@@ -51,11 +52,12 @@ Comparing the algorithms, $GP2$ outperforms the others in both correlation tests
 \cline{2-5} \multicolumn{1}{ |c| }{} & p-Value & 0.5157 & 0.2562 & 0.05263\\
 \hline
 \end{tabular}
-\caption{Correlation Test Between Algorithms and Proof-readers' Feedbacks as well as P-Value of Significance of Correlation Test}
 \label{table:correlation}
+\vspace{-0.3cm}
 \end{table}
 
 \subsection{Learning To Rank}
+\vspace{-0.2cm}
 In order to accumulate data required for ranking model, we conduct a survey with eight human annotators. The questions of survey represent three translators each with four criteria (price, delivery time, proficiency and number of cooperation times). As mentioned before, in order to prevent bias in results, the name and the picture of the translators are hidden from the annotators. The annotators rate the questions from one to three based on \textit{Total Order} strategy. The accumulated data consists of $400$ annotated list and overall $1200$ records.
 
 We use the RankLib library\footnote{http://sourceforge.net/p/lemur/wiki/RankLib} to apply a large set of Learning to Rank methods. The library provides the  implementation of some Learning to Rank algorithms as well as evaluation measures in Java. By splitting the data in train, validation and test datasets, we use 5-Fold Cross-Validation on each run. One pointwise, three pairwise and two listwise methods are tested.
@@ -72,6 +74,7 @@ As it is shown, price and delivery time seem to be the most effective features w
 
 \begin{table}
 \vspace{-0.3cm}
+\caption{Results of applying Learning to Rank methods based on NDCG and ERR evaluation measures}
 \centering
 \begin{tabular}{|c|c|c|c|c|}
 \hline \multirow{2}{*}{Method} & \multicolumn{2}{ c| }{NDCG@3} & \multicolumn{2}{ c| }{ERR@3}  \\
@@ -85,7 +88,7 @@ As it is shown, price and delivery time seem to be the most effective features w
 \hline Random Ranker & 0.832 & 0.832 & 0.375 & 0.378 \\
 \hline
 \end{tabular}
-\caption{Results of applying Learning to Rank methods based on NDCG and ERR evaluation measures}
+\vspace{-0.3cm}
 \label{table:l2rresult}
 \end{table}
 
@@ -93,12 +96,14 @@ As it is shown, price and delivery time seem to be the most effective features w
 \begin{figure}
 \centering
 \includegraphics[scale=0.6]{figures/l2rdiagram.png}
+\vspace{-0.3cm}
 \caption{Learning to Rank Results}
 \label{fig:l2rdiagram}
 \end{figure}
 
 \begin{table}
 \vspace{-0.3cm}
+\caption{Coefficient value of features in Linear Regression model}
 \centering
 \begin{tabular}{|c|c|}
 \hline Feature & Value  \\
@@ -108,6 +113,5 @@ As it is shown, price and delivery time seem to be the most effective features w
 \hline Number of Cooperation Times & -0.313 \\
 \hline
 \end{tabular}
-\caption{Coefficient value of features in Linear Regression model}
 \label{table:l2rcoefficient}
 \end{table}
