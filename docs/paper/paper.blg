@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: paper.aux
+The style file: splncs.bst
+Database file #1: paper.bib
+Warning--empty booktitle in l2r-lambdarank
+Warning--empty booktitle in l2r-lambdamart
+You've used 21 entries,
+            2043 wiz_defined-function locations,
+            581 strings with 6715 characters,
+and the built_in function-call counts, 4244 in all, are:
+= -- 339
+> -- 262
+< -- 0
++ -- 95
+- -- 74
+* -- 272
+:= -- 651
+add.period$ -- 25
+call.type$ -- 21
+change.case$ -- 19
+chr.to.int$ -- 0
+cite$ -- 23
+duplicate$ -- 235
+empty$ -- 469
+format.name$ -- 74
+if$ -- 996
+int.to.chr$ -- 0
+int.to.str$ -- 21
+missing$ -- 21
+newline$ -- 104
+num.names$ -- 21
+pop$ -- 121
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 93
+stack$ -- 0
+substring$ -- 0
+swap$ -- 51
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 21
+width$ -- 23
+write$ -- 210
+(There were 2 warnings)

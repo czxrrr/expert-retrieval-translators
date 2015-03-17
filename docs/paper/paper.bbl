@@ -1,0 +1,112 @@
+\begin{thebibliography}{10}
+
+\bibitem{Grefenstette:2011}
+Grefenstette, G., Wilber, L.:
+\newblock {Search Based Applications}.
+\newblock Morgan \& Claypool Publishers (2011)
+
+\bibitem{er-sparse}
+Balog, K., Bogers, T., Azzopardi, L., de~Rijke, M., van~den Bosch, A.:
+\newblock Broad expertise retrieval in sparse data environments.
+\newblock In: Proc. of SIGIR. (2007)
+
+\bibitem{er}
+Balog, Krisztian, Fang, Y., de~Rijke, M., Serdyukov, P., Si., L.:
+\newblock Expertise retrieval.
+\newblock Foundations and Trends in Information Retrieval \textbf{6} (2012)
+
+\bibitem{er-community-aware}
+Deng, Hongbo, King, I., Lyu., M.R.:
+\newblock Enhanced models for expertise retrieval using community-aware
+  strategies.
+\newblock Systems Man and Cybernetics Part B: Cybernetics IEEE Transactions
+  (2012)
+
+\bibitem{trec2005}
+Cao, Y., Liu, J., Bao, S., Li, H.:
+\newblock Research on expert search at enterprise track of trec 2005.
+\newblock In: Proc. of TREC. (2005)
+
+\bibitem{agg-learning}
+Macdonald, Craig, Ounis, I.:
+\newblock Learning models for ranking aggregates.
+\newblock Advances in Information Retrieval. Springer Berlin Heidelberg (2011)
+
+\bibitem{l2r-intro}
+Hang, L.I.:
+\newblock A short introduction to learning to rank.
+\newblock {Transactions on Information and Systems} (2011)
+
+\bibitem{agg-gp2}
+Cummins, R., Lalmas, M., O'Riordan, C.:
+\newblock Learning aggregation functions for expert search.
+\newblock In: Proc. of ECAI. (2010)
+
+\bibitem{agg-vote}
+Macdonald, C., Ounis, I.:
+\newblock Voting for candidates: adapting data fusion techniques for an expert
+  search task.
+\newblock In: Proc. of CIKM. (2006)
+
+\bibitem{l2r-book}
+Lie, T.Y.:
+\newblock Learning to rank for information retrieval. Foundations and Trends in
+  Information Retrieval.
+\newblock Springer (2011)
+
+\bibitem{l2r-ranknet}
+Burges, C., Shaked, T., Renshaw, E., Lazier, A., Deeds, M., Hamilton, N.,
+  Hullender, G.:
+\newblock Learning to rank using gradient descent.
+\newblock In: Proc. of ICML, New York, NY, USA (2005)
+
+\bibitem{l2r-rankboost}
+Freund, Y., Iyer, R., Schapire, R.E., Singer, Y.:
+\newblock An efficient boosting algorithm for combining preferences (1998)
+
+\bibitem{l2r-lambdarank}
+Burges, C., C.J., Ragno, Robert, Le, V., Q.:
+\newblock Learning to rank with nonsmooth cost functions, MIT Press (2006)
+
+\bibitem{l2r-lambdamart}
+Wu, Q., Burges, C.J.C., Svore, K.M., Gao, J.:
+\newblock Adapting boosting for information retrieval measures, Springer
+  Science (2009)
+
+\bibitem{l2r-adarank}
+Xu, J., Li, H.:
+\newblock Adarank: A boosting algorithm for information retrieval.
+\newblock In: Procs of SIGIR. (2007)
+
+\bibitem{l2r-listnet}
+Cao, Z., Qin, T., Liu, T.Y., Tsai, M.F., Li, H.:
+\newblock Learning to rank: From pairwise approach to listwise approach.
+\newblock In: Procs of ICML. (2007)
+
+\bibitem{l2r-when}
+Macdonald, C., Santos, R.L., Ounis, I.:
+\newblock The whens and hows of learning to rank for web search.
+\newblock Inf. Retr. \textbf{16} (2013)
+
+\bibitem{l2r-err}
+Chapelle, O., Zhang, Y.:
+\newblock Expected reciprocal rank for graded relevance.
+\newblock In: Proc. of CIKM. (2009)
+
+\bibitem{l2r-clickmodel1}
+Craswell, N., Zoeter, O., Taylor, M., Ramsey, B.:
+\newblock An experimental comparison of click position-bias models.
+\newblock In: Proc. of WSDM. (2008)
+
+\bibitem{l2r-clickmodel2}
+B{\"u}ttcher, S., Clarke, C.L.A., Yeung, P.C.K., et~al.:
+\newblock Reliable information retrieval evaluation with incomplete and biased
+  judgements (2007)
+
+\bibitem{as89}
+Best, D.J., Roberts, D.E.:
+\newblock Algorithm as 89: The upper tail probabilities of spearman's rho.
+\newblock Journal of the Royal Statistical Society. Series C (Applied
+  Statistics) \textbf{24} (1975)
+
+\end{thebibliography}
